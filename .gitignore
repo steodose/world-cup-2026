@@ -1,0 +1,10 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
+
+# stray source asset at repo root (already copied to site/assets/btp-logo.png)
+/BTP (5).png

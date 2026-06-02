@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <title>2026 FIFA World Cup Forecast</title>
+  <link rel="icon" href="assets/logo.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <img class="logo" src="assets/logo.png" alt="2026 FIFA World Cup" />
+    <div class="title-block">
+      <h1>2026 FIFA World Cup Forecast</h1>
+      <p class="tagline">
+        United States &middot; Canada &middot; Mexico
+      </p>
+      <p class="meta" id="meta"></p>
+    </div>
+    <a class="btp-badge" href="https://betweenthepipes.substack.com"
+       target="_blank" rel="noopener" title="A Between the Pipes project">
+      <img src="assets/btp-logo.png" alt="Between the Pipes" />
+    </a>
+  </header>
+
+  <nav class="tabs">
+    <button class="tab is-active" data-tab="groups">Group Stage</button>
+    <button class="tab" data-tab="simulations">Simulations</button>
+    <button class="tab" data-tab="how">How This Works</button>
+  </nav>
+
+  <main>
+    <section id="groups" class="panel is-active">
+      <p class="panel-intro">
+        Each team's chance of finishing in each group position and of advancing
+        to the knockout stage (top two of every group plus the eight best
+        third-placed teams qualify).
+      </p>
+      <div class="panel-actions">
+        <button id="dl-groups-png" class="dl-btn">⬇&nbsp; Download PNG</button>
+      </div>
+      <div id="group-grid" class="group-grid"></div>
+    </section>
+
+    <section id="simulations" class="panel">
+      <p class="panel-intro">
+        Simulated probability of each team reaching each stage of the knockout
+        bracket. Click any column header to sort.
+      </p>
+      <div class="panel-actions">
+        <button id="dl-sims-png" class="dl-btn">⬇&nbsp; Download PNG</button>
+        <button id="dl-sims-csv" class="dl-btn">⬇&nbsp; Download CSV</button>
+      </div>
+      <div class="table-wrap" id="sims-table-wrap">
+        <table id="ko-table" class="ko-table">
+          <thead></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="how" class="panel">
+      <div class="explainer">
+        <p class="lead">
+          Between the Pipes estimates each team's strength, turns that into match
+          probabilities, and then simulates the entire tournament tens of
+          thousands of times to see how often teams reach each stage.
+        </p>
+
+        <h2>1 &middot; Composite team ratings</h2>
+        <p>
+          Every team is given a single strength rating built from publicly
+          available rating systems. Each source is normalized to a common scale
+          (mean 1500, standard deviation 150) so that systems expressed in
+          different units can be compared fairly, then blended together with
+          configurable weights. The composite currently combines two sources,
+          weighted 60/40 toward the <strong>KU Leuven DTAI Sports Analytics
+          Lab</strong> model over <strong>World Football Elo</strong>
+          (eloratings.net).
+        </p>
+
+        <h2>2 &middot; From ratings to match probabilities</h2>
+        <p>
+          For any given matchup, the gap between the two teams' composite ratings
+          is converted into an <em>expected goal supremacy</em> &mdash; how many
+          goals, on average, the stronger side is expected to win by. Each team's
+          goals are then drawn from a <strong>Poisson distribution</strong> around
+          its expected total. This produces a full scoreline rather than just a
+          win or a loss, which matters because group-stage tiebreakers depend on
+          goal difference and goals scored.
+        </p>
+        <p>
+          The model is calibrated so that a typical match produces realistic
+          numbers: around 2.7 goals per game and a draw roughly a fifth of the
+          time. Host nations (USA, Mexico, Canada) receive a small home-field
+          bump.
+        </p>
+
+        <h2>3 &middot; Knockout matches</h2>
+        <p>
+          Knockout games are simulated the same way, but with tiebreakers built in. When
+          regulation ends level, the winner is decided by a "softened"
+          win-expectancy: the stronger team is still favored, but pulled toward a
+          coin flip to reflect the added randomness of extra time and penalties.
+        </p>
+
+        <h2>4 &middot; Monte-Carlo simulation</h2>
+        <p>
+          The full 48-team tournament is then simulated
+          <strong id="how-nsims">50,000</strong> times. Each run plays all twelve
+          groups (applying FIFA's points &rarr; goal difference &rarr; goals-scored
+          tiebreakers), determines the top two from every group plus the eight
+          best third-placed teams, and resolves the official bracket from the
+          Round of 32 through to the Final. The probabilities shown throughout the
+          dashboard &mdash; a team's chance of reaching a given round, or of
+          lifting the trophy &mdash; are simply how often that outcome occurred
+          across all of those simulated tournaments.
+        </p>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    A <a href="https://betweenthepipes.substack.com" target="_blank" rel="noopener"><strong>Between the Pipes</strong></a>
+    project by <a href="https://stephanteodosescu.com" target="_blank" rel="noopener">Stephan Teodosescu</a>
+    &middot; Data: <a href="https://www.eloratings.net" target="_blank" rel="noopener">eloratings.net</a>,
+    <a href="https://dtai.cs.kuleuven.be/sports/worldcup2026/" target="_blank" rel="noopener">KU Leuven</a>
+    &middot; <a href="https://github.com/steodose/world-cup-2026" target="_blank" rel="noopener">Source Code</a>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
