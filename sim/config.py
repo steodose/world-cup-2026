@@ -19,6 +19,10 @@ RATINGS_CSV = DATA_DIR / "ratings.csv"
 RESULTS_CSV = DATA_DIR / "results.csv"
 DATA_JSON = SITE_DIR / "data.json"
 
+# Tidy CSV of the latest simulation, committed to the repo so anyone can do
+# further analysis without running the model. Regenerated on every `run.py`.
+SIMS_CSV = DATA_DIR / "simulations.csv"
+
 # ---------------------------------------------------------------------------
 # Composite ratings
 # ---------------------------------------------------------------------------

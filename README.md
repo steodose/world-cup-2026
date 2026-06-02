@@ -16,7 +16,7 @@ lifting the cup. Results are rendered in a light, sortable dashboard.
 python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 
-# build ratings -> simulate -> write site/data.json
+# build ratings -> simulate -> write site/data.json + simulations.csv
 python fetch_ratings.py        # seed/refresh the Elo column in data/ratings.csv
 python run.py                  # run the simulation
 
@@ -82,7 +82,14 @@ sim/                config, ratings, match model, bracket, simulator, export
 fetch_ratings.py    populate the Elo column (scrape + baked-in fallback)
 run.py              build ratings -> simulate -> write site/data.json
 site/               static dashboard (index.html, style.css, app.js, data.json)
+data/simulations.csv  latest sim as a tidy CSV (one row per team) for analysis
 ```
+
+`simulations.csv` is regenerated on every `python run.py` and committed to the
+repo, so anyone can download it and do further analysis without running the
+model. It has one row per team with the global rank, composite rating, each
+source rating (`rating_elo`, `rating_kuleuven`, …), projected group points, and
+every stage probability as a 0–1 fraction.
 
 The `site/` folder is fully static and can be deployed as-is to GitHub Pages or
 any static host.

@@ -1,5 +1,6 @@
 """Aggregate simulation counters into site/data.json for the dashboard."""
 
+import csv
 import json
 from datetime import datetime, timezone
 
@@ -81,4 +82,52 @@ def write_json(result, path=None):
         f.write("window.WC_DATA = ")
         json.dump(payload, f, ensure_ascii=False, indent=1)
         f.write(";\n")
+    return path
+
+
+def write_csv(result, path=None):
+    """Write a tidy, analysis-friendly CSV of the latest simulation.
+
+    One row per team, sorted by Champion% (strongest first). Probability
+    columns are 0-1 fractions; per-source ratings are included so the raw
+    inputs travel with the outputs. Regenerated on every run.
+    """
+    path = path or config.SIMS_CSV
+    payload = build_payload(result)
+    teams = payload["teams"]
+
+    # Per-source rating columns (e.g. elo, kuleuven), in WEIGHTS order.
+    source_keys = [s for s, w in config.WEIGHTS.items() if w > 0]
+
+    fieldnames = (
+        ["rank", "team", "group", "rating"]
+        + [f"rating_{k}" for k in source_keys]
+        + ["proj_points",
+           "win_group", "runner_up", "third", "fourth",
+           "advance", "round_of_32", "round_of_16", "quarter_finals",
+           "semi_finals", "final", "champion"]
+    )
+
+    def prob(v):
+        return round(v, 4)
+
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with open(path, "w", encoding="utf-8", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer.writeheader()
+        for t in teams:
+            row = {
+                "rank": t["rank"],
+                "team": t["name"],
+                "group": t["group"],
+                "rating": t["rating"],
+                "proj_points": t["proj_points"],
+            }
+            for k in source_keys:
+                row[f"rating_{k}"] = t["sources"].get(k, "")
+            for key in ("win_group", "runner_up", "third", "fourth", "advance",
+                        "round_of_32", "round_of_16", "quarter_finals",
+                        "semi_finals", "final", "champion"):
+                row[key] = prob(t[key])
+            writer.writerow(row)
     return path
