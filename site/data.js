@@ -1,6 +1,6 @@
 window.WC_DATA = {
  "meta": {
-  "generated": "2026-06-02 04:13 UTC",
+  "generated": "2026-06-03 06:18 UTC",
   "n_sims": 50000,
   "locked_group_matches": 0,
   "locked_ko_matches": 0,
@@ -2279,6 +2279,1376 @@ window.WC_DATA = {
    "final": 0.00074,
    "champion": 0.00016,
    "rank": 48
+  }
+ ],
+ "matches": [
+  {
+   "match_no": 1,
+   "date": "2026-06-11",
+   "venue": "Mexico City",
+   "stage": "group",
+   "group": "A",
+   "team_a": {
+    "name": "Mexico",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/mex.png"
+   },
+   "team_b": {
+    "name": "South Africa",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/rsa.png"
+   },
+   "p_a": 0.6256,
+   "p_draw": 0.2178,
+   "p_b": 0.1566,
+   "played": false
+  },
+  {
+   "match_no": 2,
+   "date": "2026-06-11",
+   "venue": "Zapopan",
+   "stage": "group",
+   "group": "A",
+   "team_a": {
+    "name": "South Korea",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/kor.png"
+   },
+   "team_b": {
+    "name": "Czech Republic",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/cze.png"
+   },
+   "p_a": 0.4066,
+   "p_draw": 0.2573,
+   "p_b": 0.3361,
+   "played": false
+  },
+  {
+   "match_no": 3,
+   "date": "2026-06-12",
+   "venue": "Toronto",
+   "stage": "group",
+   "group": "B",
+   "team_a": {
+    "name": "Canada",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/can.png"
+   },
+   "team_b": {
+    "name": "Bosnia & Herzegovina",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/bih.png"
+   },
+   "p_a": 0.527,
+   "p_draw": 0.2424,
+   "p_b": 0.2306,
+   "played": false
+  },
+  {
+   "match_no": 4,
+   "date": "2026-06-12",
+   "venue": "Inglewood",
+   "stage": "group",
+   "group": "D",
+   "team_a": {
+    "name": "USA",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/usa.png"
+   },
+   "team_b": {
+    "name": "Paraguay",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/par.png"
+   },
+   "p_a": 0.4104,
+   "p_draw": 0.2571,
+   "p_b": 0.3325,
+   "played": false
+  },
+  {
+   "match_no": 5,
+   "date": "2026-06-13",
+   "venue": "Santa Clara",
+   "stage": "group",
+   "group": "B",
+   "team_a": {
+    "name": "Qatar",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/qat.png"
+   },
+   "team_b": {
+    "name": "Switzerland",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/swi.png"
+   },
+   "p_a": 0.1901,
+   "p_draw": 0.2308,
+   "p_b": 0.5791,
+   "played": false
+  },
+  {
+   "match_no": 6,
+   "date": "2026-06-13",
+   "venue": "East Rutherford",
+   "stage": "group",
+   "group": "C",
+   "team_a": {
+    "name": "Brazil",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/bra.png"
+   },
+   "team_b": {
+    "name": "Morocco",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/mor.png"
+   },
+   "p_a": 0.4844,
+   "p_draw": 0.2497,
+   "p_b": 0.2659,
+   "played": false
+  },
+  {
+   "match_no": 7,
+   "date": "2026-06-13",
+   "venue": "Foxborough",
+   "stage": "group",
+   "group": "C",
+   "team_a": {
+    "name": "Haiti",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/hai.png"
+   },
+   "team_b": {
+    "name": "Scotland",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/sco.png"
+   },
+   "p_a": 0.2715,
+   "p_draw": 0.2506,
+   "p_b": 0.4779,
+   "played": false
+  },
+  {
+   "match_no": 8,
+   "date": "2026-06-13",
+   "venue": "Vancouver",
+   "stage": "group",
+   "group": "D",
+   "team_a": {
+    "name": "Australia",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/aus.png"
+   },
+   "team_b": {
+    "name": "Turkey",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/tur.png"
+   },
+   "p_a": 0.3303,
+   "p_draw": 0.257,
+   "p_b": 0.4127,
+   "played": false
+  },
+  {
+   "match_no": 9,
+   "date": "2026-06-14",
+   "venue": "Houston",
+   "stage": "group",
+   "group": "E",
+   "team_a": {
+    "name": "Germany",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/ger.png"
+   },
+   "team_b": {
+    "name": "Curaçao",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/soccer/500/11678.png"
+   },
+   "p_a": 0.6613,
+   "p_draw": 0.2063,
+   "p_b": 0.1325,
+   "played": false
+  },
+  {
+   "match_no": 10,
+   "date": "2026-06-14",
+   "venue": "Philadelphia",
+   "stage": "group",
+   "group": "E",
+   "team_a": {
+    "name": "Ivory Coast",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/civ.png"
+   },
+   "team_b": {
+    "name": "Ecuador",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/ecu.png"
+   },
+   "p_a": 0.2362,
+   "p_draw": 0.2437,
+   "p_b": 0.5201,
+   "played": false
+  },
+  {
+   "match_no": 11,
+   "date": "2026-06-14",
+   "venue": "Arlington",
+   "stage": "group",
+   "group": "F",
+   "team_a": {
+    "name": "Netherlands",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/ned.png"
+   },
+   "team_b": {
+    "name": "Japan",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/jpn.png"
+   },
+   "p_a": 0.4003,
+   "p_draw": 0.2576,
+   "p_b": 0.3421,
+   "played": false
+  },
+  {
+   "match_no": 12,
+   "date": "2026-06-14",
+   "venue": "Guadalupe",
+   "stage": "group",
+   "group": "F",
+   "team_a": {
+    "name": "Sweden",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/swe.png"
+   },
+   "team_b": {
+    "name": "Tunisia",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/tun.png"
+   },
+   "p_a": 0.4477,
+   "p_draw": 0.2542,
+   "p_b": 0.2981,
+   "played": false
+  },
+  {
+   "match_no": 13,
+   "date": "2026-06-15",
+   "venue": "Seattle",
+   "stage": "group",
+   "group": "G",
+   "team_a": {
+    "name": "Belgium",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/bel.png"
+   },
+   "team_b": {
+    "name": "Egypt",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/egy.png"
+   },
+   "p_a": 0.5027,
+   "p_draw": 0.2468,
+   "p_b": 0.2505,
+   "played": false
+  },
+  {
+   "match_no": 14,
+   "date": "2026-06-15",
+   "venue": "Inglewood",
+   "stage": "group",
+   "group": "G",
+   "team_a": {
+    "name": "Iran",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/irn.png"
+   },
+   "team_b": {
+    "name": "New Zealand",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/nzl.png"
+   },
+   "p_a": 0.4927,
+   "p_draw": 0.2484,
+   "p_b": 0.2589,
+   "played": false
+  },
+  {
+   "match_no": 15,
+   "date": "2026-06-15",
+   "venue": "Atlanta",
+   "stage": "group",
+   "group": "H",
+   "team_a": {
+    "name": "Spain",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/esp.png"
+   },
+   "team_b": {
+    "name": "Cape Verde",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/cpv.png"
+   },
+   "p_a": 0.7489,
+   "p_draw": 0.1719,
+   "p_b": 0.0792,
+   "played": false
+  },
+  {
+   "match_no": 16,
+   "date": "2026-06-15",
+   "venue": "Miami Gardens",
+   "stage": "group",
+   "group": "H",
+   "team_a": {
+    "name": "Saudi Arabia",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/ksa.png"
+   },
+   "team_b": {
+    "name": "Uruguay",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/uru.png"
+   },
+   "p_a": 0.2188,
+   "p_draw": 0.2394,
+   "p_b": 0.5418,
+   "played": false
+  },
+  {
+   "match_no": 17,
+   "date": "2026-06-16",
+   "venue": "East Rutherford",
+   "stage": "group",
+   "group": "I",
+   "team_a": {
+    "name": "France",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/fra.png"
+   },
+   "team_b": {
+    "name": "Senegal",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/sen.png"
+   },
+   "p_a": 0.5283,
+   "p_draw": 0.2422,
+   "p_b": 0.2295,
+   "played": false
+  },
+  {
+   "match_no": 18,
+   "date": "2026-06-16",
+   "venue": "Foxborough",
+   "stage": "group",
+   "group": "I",
+   "team_a": {
+    "name": "Iraq",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/irq.png"
+   },
+   "team_b": {
+    "name": "Norway",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/nor.png"
+   },
+   "p_a": 0.2604,
+   "p_draw": 0.2487,
+   "p_b": 0.4909,
+   "played": false
+  },
+  {
+   "match_no": 19,
+   "date": "2026-06-16",
+   "venue": "Kansas City",
+   "stage": "group",
+   "group": "J",
+   "team_a": {
+    "name": "Argentina",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/arg.png"
+   },
+   "team_b": {
+    "name": "Algeria",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/alg.png"
+   },
+   "p_a": 0.6123,
+   "p_draw": 0.2218,
+   "p_b": 0.166,
+   "played": false
+  },
+  {
+   "match_no": 20,
+   "date": "2026-06-16",
+   "venue": "Santa Clara",
+   "stage": "group",
+   "group": "J",
+   "team_a": {
+    "name": "Austria",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/aut.png"
+   },
+   "team_b": {
+    "name": "Jordan",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/jor.png"
+   },
+   "p_a": 0.4645,
+   "p_draw": 0.2523,
+   "p_b": 0.2832,
+   "played": false
+  },
+  {
+   "match_no": 21,
+   "date": "2026-06-17",
+   "venue": "Houston",
+   "stage": "group",
+   "group": "K",
+   "team_a": {
+    "name": "Portugal",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/por.png"
+   },
+   "team_b": {
+    "name": "DR Congo",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/cgo.png"
+   },
+   "p_a": 0.618,
+   "p_draw": 0.2201,
+   "p_b": 0.1619,
+   "played": false
+  },
+  {
+   "match_no": 22,
+   "date": "2026-06-17",
+   "venue": "Mexico City",
+   "stage": "group",
+   "group": "K",
+   "team_a": {
+    "name": "Uzbekistan",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/uzb.png"
+   },
+   "team_b": {
+    "name": "Colombia",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/col.png"
+   },
+   "p_a": 0.2518,
+   "p_draw": 0.2471,
+   "p_b": 0.5011,
+   "played": false
+  },
+  {
+   "match_no": 23,
+   "date": "2026-06-17",
+   "venue": "Arlington",
+   "stage": "group",
+   "group": "L",
+   "team_a": {
+    "name": "England",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/eng.png"
+   },
+   "team_b": {
+    "name": "Croatia",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/cro.png"
+   },
+   "p_a": 0.4239,
+   "p_draw": 0.2563,
+   "p_b": 0.3198,
+   "played": false
+  },
+  {
+   "match_no": 24,
+   "date": "2026-06-17",
+   "venue": "Toronto",
+   "stage": "group",
+   "group": "L",
+   "team_a": {
+    "name": "Ghana",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/gha.png"
+   },
+   "team_b": {
+    "name": "Panama",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/pan.png"
+   },
+   "p_a": 0.223,
+   "p_draw": 0.2405,
+   "p_b": 0.5365,
+   "played": false
+  },
+  {
+   "match_no": 25,
+   "date": "2026-06-18",
+   "venue": "Atlanta",
+   "stage": "group",
+   "group": "A",
+   "team_a": {
+    "name": "Czech Republic",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/cze.png"
+   },
+   "team_b": {
+    "name": "South Africa",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/rsa.png"
+   },
+   "p_a": 0.5046,
+   "p_draw": 0.2465,
+   "p_b": 0.2489,
+   "played": false
+  },
+  {
+   "match_no": 26,
+   "date": "2026-06-18",
+   "venue": "Zapopan",
+   "stage": "group",
+   "group": "A",
+   "team_a": {
+    "name": "Mexico",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/mex.png"
+   },
+   "team_b": {
+    "name": "South Korea",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/kor.png"
+   },
+   "p_a": 0.4537,
+   "p_draw": 0.2536,
+   "p_b": 0.2927,
+   "played": false
+  },
+  {
+   "match_no": 27,
+   "date": "2026-06-18",
+   "venue": "Inglewood",
+   "stage": "group",
+   "group": "B",
+   "team_a": {
+    "name": "Switzerland",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/swi.png"
+   },
+   "team_b": {
+    "name": "Bosnia & Herzegovina",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/bih.png"
+   },
+   "p_a": 0.5398,
+   "p_draw": 0.2398,
+   "p_b": 0.2203,
+   "played": false
+  },
+  {
+   "match_no": 28,
+   "date": "2026-06-18",
+   "venue": "Vancouver",
+   "stage": "group",
+   "group": "B",
+   "team_a": {
+    "name": "Canada",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/can.png"
+   },
+   "team_b": {
+    "name": "Qatar",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/qat.png"
+   },
+   "p_a": 0.5664,
+   "p_draw": 0.2339,
+   "p_b": 0.1997,
+   "played": false
+  },
+  {
+   "match_no": 29,
+   "date": "2026-06-19",
+   "venue": "Foxborough",
+   "stage": "group",
+   "group": "C",
+   "team_a": {
+    "name": "Scotland",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/sco.png"
+   },
+   "team_b": {
+    "name": "Morocco",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/mor.png"
+   },
+   "p_a": 0.3343,
+   "p_draw": 0.2572,
+   "p_b": 0.4085,
+   "played": false
+  },
+  {
+   "match_no": 30,
+   "date": "2026-06-19",
+   "venue": "Philadelphia",
+   "stage": "group",
+   "group": "C",
+   "team_a": {
+    "name": "Brazil",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/bra.png"
+   },
+   "team_b": {
+    "name": "Haiti",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/hai.png"
+   },
+   "p_a": 0.6315,
+   "p_draw": 0.216,
+   "p_b": 0.1525,
+   "played": false
+  },
+  {
+   "match_no": 31,
+   "date": "2026-06-19",
+   "venue": "Seattle",
+   "stage": "group",
+   "group": "D",
+   "team_a": {
+    "name": "USA",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/usa.png"
+   },
+   "team_b": {
+    "name": "Australia",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/aus.png"
+   },
+   "p_a": 0.4037,
+   "p_draw": 0.2574,
+   "p_b": 0.3388,
+   "played": false
+  },
+  {
+   "match_no": 32,
+   "date": "2026-06-19",
+   "venue": "Santa Clara",
+   "stage": "group",
+   "group": "D",
+   "team_a": {
+    "name": "Turkey",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/tur.png"
+   },
+   "team_b": {
+    "name": "Paraguay",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/par.png"
+   },
+   "p_a": 0.4195,
+   "p_draw": 0.2566,
+   "p_b": 0.324,
+   "played": false
+  },
+  {
+   "match_no": 33,
+   "date": "2026-06-20",
+   "venue": "Toronto",
+   "stage": "group",
+   "group": "E",
+   "team_a": {
+    "name": "Germany",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/ger.png"
+   },
+   "team_b": {
+    "name": "Ivory Coast",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/civ.png"
+   },
+   "p_a": 0.5548,
+   "p_draw": 0.2366,
+   "p_b": 0.2086,
+   "played": false
+  },
+  {
+   "match_no": 34,
+   "date": "2026-06-20",
+   "venue": "Kansas City",
+   "stage": "group",
+   "group": "E",
+   "team_a": {
+    "name": "Ecuador",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/ecu.png"
+   },
+   "team_b": {
+    "name": "Curaçao",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/soccer/500/11678.png"
+   },
+   "p_a": 0.6279,
+   "p_draw": 0.2171,
+   "p_b": 0.155,
+   "played": false
+  },
+  {
+   "match_no": 35,
+   "date": "2026-06-20",
+   "venue": "Houston",
+   "stage": "group",
+   "group": "F",
+   "team_a": {
+    "name": "Netherlands",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/ned.png"
+   },
+   "team_b": {
+    "name": "Sweden",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/swe.png"
+   },
+   "p_a": 0.5131,
+   "p_draw": 0.245,
+   "p_b": 0.2419,
+   "played": false
+  },
+  {
+   "match_no": 36,
+   "date": "2026-06-20",
+   "venue": "Guadalupe",
+   "stage": "group",
+   "group": "F",
+   "team_a": {
+    "name": "Tunisia",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/tun.png"
+   },
+   "team_b": {
+    "name": "Japan",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/jpn.png"
+   },
+   "p_a": 0.2036,
+   "p_draw": 0.2351,
+   "p_b": 0.5613,
+   "played": false
+  },
+  {
+   "match_no": 37,
+   "date": "2026-06-21",
+   "venue": "Inglewood",
+   "stage": "group",
+   "group": "G",
+   "team_a": {
+    "name": "Belgium",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/bel.png"
+   },
+   "team_b": {
+    "name": "Iran",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/irn.png"
+   },
+   "p_a": 0.424,
+   "p_draw": 0.2563,
+   "p_b": 0.3197,
+   "played": false
+  },
+  {
+   "match_no": 38,
+   "date": "2026-06-21",
+   "venue": "Vancouver",
+   "stage": "group",
+   "group": "G",
+   "team_a": {
+    "name": "New Zealand",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/nzl.png"
+   },
+   "team_b": {
+    "name": "Egypt",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/egy.png"
+   },
+   "p_a": 0.329,
+   "p_draw": 0.2569,
+   "p_b": 0.4141,
+   "played": false
+  },
+  {
+   "match_no": 39,
+   "date": "2026-06-21",
+   "venue": "Atlanta",
+   "stage": "group",
+   "group": "H",
+   "team_a": {
+    "name": "Spain",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/esp.png"
+   },
+   "team_b": {
+    "name": "Saudi Arabia",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/ksa.png"
+   },
+   "p_a": 0.6926,
+   "p_draw": 0.195,
+   "p_b": 0.1124,
+   "played": false
+  },
+  {
+   "match_no": 40,
+   "date": "2026-06-21",
+   "venue": "Miami Gardens",
+   "stage": "group",
+   "group": "H",
+   "team_a": {
+    "name": "Uruguay",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/uru.png"
+   },
+   "team_b": {
+    "name": "Cape Verde",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/cpv.png"
+   },
+   "p_a": 0.604,
+   "p_draw": 0.2241,
+   "p_b": 0.1719,
+   "played": false
+  },
+  {
+   "match_no": 41,
+   "date": "2026-06-22",
+   "venue": "Philadelphia",
+   "stage": "group",
+   "group": "I",
+   "team_a": {
+    "name": "France",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/fra.png"
+   },
+   "team_b": {
+    "name": "Iraq",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/irq.png"
+   },
+   "p_a": 0.6275,
+   "p_draw": 0.2172,
+   "p_b": 0.1552,
+   "played": false
+  },
+  {
+   "match_no": 42,
+   "date": "2026-06-22",
+   "venue": "East Rutherford",
+   "stage": "group",
+   "group": "I",
+   "team_a": {
+    "name": "Norway",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/nor.png"
+   },
+   "team_b": {
+    "name": "Senegal",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/sen.png"
+   },
+   "p_a": 0.392,
+   "p_draw": 0.2579,
+   "p_b": 0.3502,
+   "played": false
+  },
+  {
+   "match_no": 43,
+   "date": "2026-06-22",
+   "venue": "Arlington",
+   "stage": "group",
+   "group": "J",
+   "team_a": {
+    "name": "Argentina",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/arg.png"
+   },
+   "team_b": {
+    "name": "Austria",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/aut.png"
+   },
+   "p_a": 0.5474,
+   "p_draw": 0.2382,
+   "p_b": 0.2144,
+   "played": false
+  },
+  {
+   "match_no": 44,
+   "date": "2026-06-22",
+   "venue": "Santa Clara",
+   "stage": "group",
+   "group": "J",
+   "team_a": {
+    "name": "Jordan",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/jor.png"
+   },
+   "team_b": {
+    "name": "Algeria",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/alg.png"
+   },
+   "p_a": 0.3424,
+   "p_draw": 0.2576,
+   "p_b": 0.4,
+   "played": false
+  },
+  {
+   "match_no": 45,
+   "date": "2026-06-23",
+   "venue": "Houston",
+   "stage": "group",
+   "group": "K",
+   "team_a": {
+    "name": "Portugal",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/por.png"
+   },
+   "team_b": {
+    "name": "Uzbekistan",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/uzb.png"
+   },
+   "p_a": 0.5135,
+   "p_draw": 0.245,
+   "p_b": 0.2416,
+   "played": false
+  },
+  {
+   "match_no": 46,
+   "date": "2026-06-23",
+   "venue": "Zapopan",
+   "stage": "group",
+   "group": "K",
+   "team_a": {
+    "name": "Colombia",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/col.png"
+   },
+   "team_b": {
+    "name": "DR Congo",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/cgo.png"
+   },
+   "p_a": 0.6059,
+   "p_draw": 0.2236,
+   "p_b": 0.1705,
+   "played": false
+  },
+  {
+   "match_no": 47,
+   "date": "2026-06-23",
+   "venue": "Foxborough",
+   "stage": "group",
+   "group": "L",
+   "team_a": {
+    "name": "England",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/eng.png"
+   },
+   "team_b": {
+    "name": "Ghana",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/gha.png"
+   },
+   "p_a": 0.696,
+   "p_draw": 0.1937,
+   "p_b": 0.1103,
+   "played": false
+  },
+  {
+   "match_no": 48,
+   "date": "2026-06-23",
+   "venue": "Toronto",
+   "stage": "group",
+   "group": "L",
+   "team_a": {
+    "name": "Panama",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/pan.png"
+   },
+   "team_b": {
+    "name": "Croatia",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/cro.png"
+   },
+   "p_a": 0.2712,
+   "p_draw": 0.2506,
+   "p_b": 0.4782,
+   "played": false
+  },
+  {
+   "match_no": 49,
+   "date": "2026-06-24",
+   "venue": "Mexico City",
+   "stage": "group",
+   "group": "A",
+   "team_a": {
+    "name": "Czech Republic",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/cze.png"
+   },
+   "team_b": {
+    "name": "Mexico",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/mex.png"
+   },
+   "p_a": 0.2606,
+   "p_draw": 0.2487,
+   "p_b": 0.4907,
+   "played": false
+  },
+  {
+   "match_no": 50,
+   "date": "2026-06-24",
+   "venue": "Guadalupe",
+   "stage": "group",
+   "group": "A",
+   "team_a": {
+    "name": "South Africa",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/rsa.png"
+   },
+   "team_b": {
+    "name": "South Korea",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/kor.png"
+   },
+   "p_a": 0.2189,
+   "p_draw": 0.2394,
+   "p_b": 0.5417,
+   "played": false
+  },
+  {
+   "match_no": 51,
+   "date": "2026-06-24",
+   "venue": "Vancouver",
+   "stage": "group",
+   "group": "B",
+   "team_a": {
+    "name": "Switzerland",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/swi.png"
+   },
+   "team_b": {
+    "name": "Canada",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/can.png"
+   },
+   "p_a": 0.3832,
+   "p_draw": 0.2581,
+   "p_b": 0.3588,
+   "played": false
+  },
+  {
+   "match_no": 52,
+   "date": "2026-06-24",
+   "venue": "Seattle",
+   "stage": "group",
+   "group": "B",
+   "team_a": {
+    "name": "Bosnia & Herzegovina",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/bih.png"
+   },
+   "team_b": {
+    "name": "Qatar",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/qat.png"
+   },
+   "p_a": 0.409,
+   "p_draw": 0.2572,
+   "p_b": 0.3338,
+   "played": false
+  },
+  {
+   "match_no": 53,
+   "date": "2026-06-24",
+   "venue": "Miami Gardens",
+   "stage": "group",
+   "group": "C",
+   "team_a": {
+    "name": "Scotland",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/sco.png"
+   },
+   "team_b": {
+    "name": "Brazil",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/bra.png"
+   },
+   "p_a": 0.2335,
+   "p_draw": 0.2431,
+   "p_b": 0.5234,
+   "played": false
+  },
+  {
+   "match_no": 54,
+   "date": "2026-06-24",
+   "venue": "Atlanta",
+   "stage": "group",
+   "group": "C",
+   "team_a": {
+    "name": "Morocco",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/mor.png"
+   },
+   "team_b": {
+    "name": "Haiti",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/hai.png"
+   },
+   "p_a": 0.5169,
+   "p_draw": 0.2443,
+   "p_b": 0.2388,
+   "played": false
+  },
+  {
+   "match_no": 55,
+   "date": "2026-06-25",
+   "venue": "Inglewood",
+   "stage": "group",
+   "group": "D",
+   "team_a": {
+    "name": "Turkey",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/tur.png"
+   },
+   "team_b": {
+    "name": "USA",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/usa.png"
+   },
+   "p_a": 0.3797,
+   "p_draw": 0.2581,
+   "p_b": 0.3621,
+   "played": false
+  },
+  {
+   "match_no": 56,
+   "date": "2026-06-25",
+   "venue": "Santa Clara",
+   "stage": "group",
+   "group": "D",
+   "team_a": {
+    "name": "Paraguay",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/par.png"
+   },
+   "team_b": {
+    "name": "Australia",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/aus.png"
+   },
+   "p_a": 0.3644,
+   "p_draw": 0.2581,
+   "p_b": 0.3775,
+   "played": false
+  },
+  {
+   "match_no": 57,
+   "date": "2026-06-25",
+   "venue": "Philadelphia",
+   "stage": "group",
+   "group": "E",
+   "team_a": {
+    "name": "Curaçao",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/soccer/500/11678.png"
+   },
+   "team_b": {
+    "name": "Ivory Coast",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/civ.png"
+   },
+   "p_a": 0.2718,
+   "p_draw": 0.2506,
+   "p_b": 0.4776,
+   "played": false
+  },
+  {
+   "match_no": 58,
+   "date": "2026-06-25",
+   "venue": "East Rutherford",
+   "stage": "group",
+   "group": "E",
+   "team_a": {
+    "name": "Ecuador",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/ecu.png"
+   },
+   "team_b": {
+    "name": "Germany",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/ger.png"
+   },
+   "p_a": 0.3382,
+   "p_draw": 0.2574,
+   "p_b": 0.4044,
+   "played": false
+  },
+  {
+   "match_no": 59,
+   "date": "2026-06-25",
+   "venue": "Arlington",
+   "stage": "group",
+   "group": "F",
+   "team_a": {
+    "name": "Japan",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/jpn.png"
+   },
+   "team_b": {
+    "name": "Sweden",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/swe.png"
+   },
+   "p_a": 0.4826,
+   "p_draw": 0.2499,
+   "p_b": 0.2675,
+   "played": false
+  },
+  {
+   "match_no": 60,
+   "date": "2026-06-25",
+   "venue": "Kansas City",
+   "stage": "group",
+   "group": "F",
+   "team_a": {
+    "name": "Tunisia",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/tun.png"
+   },
+   "team_b": {
+    "name": "Netherlands",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/ned.png"
+   },
+   "p_a": 0.1809,
+   "p_draw": 0.2275,
+   "p_b": 0.5916,
+   "played": false
+  },
+  {
+   "match_no": 61,
+   "date": "2026-06-26",
+   "venue": "Seattle",
+   "stage": "group",
+   "group": "G",
+   "team_a": {
+    "name": "Egypt",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/egy.png"
+   },
+   "team_b": {
+    "name": "Iran",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/irn.png"
+   },
+   "p_a": 0.2977,
+   "p_draw": 0.2542,
+   "p_b": 0.4481,
+   "played": false
+  },
+  {
+   "match_no": 62,
+   "date": "2026-06-26",
+   "venue": "Vancouver",
+   "stage": "group",
+   "group": "G",
+   "team_a": {
+    "name": "New Zealand",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/nzl.png"
+   },
+   "team_b": {
+    "name": "Belgium",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/bel.png"
+   },
+   "p_a": 0.2143,
+   "p_draw": 0.2382,
+   "p_b": 0.5475,
+   "played": false
+  },
+  {
+   "match_no": 63,
+   "date": "2026-06-26",
+   "venue": "Houston",
+   "stage": "group",
+   "group": "H",
+   "team_a": {
+    "name": "Cape Verde",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/cpv.png"
+   },
+   "team_b": {
+    "name": "Saudi Arabia",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/ksa.png"
+   },
+   "p_a": 0.3126,
+   "p_draw": 0.2557,
+   "p_b": 0.4317,
+   "played": false
+  },
+  {
+   "match_no": 64,
+   "date": "2026-06-26",
+   "venue": "Zapopan",
+   "stage": "group",
+   "group": "H",
+   "team_a": {
+    "name": "Uruguay",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/uru.png"
+   },
+   "team_b": {
+    "name": "Spain",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/esp.png"
+   },
+   "p_a": 0.233,
+   "p_draw": 0.243,
+   "p_b": 0.524,
+   "played": false
+  },
+  {
+   "match_no": 65,
+   "date": "2026-06-26",
+   "venue": "Foxborough",
+   "stage": "group",
+   "group": "I",
+   "team_a": {
+    "name": "Norway",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/nor.png"
+   },
+   "team_b": {
+    "name": "France",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/fra.png"
+   },
+   "p_a": 0.2475,
+   "p_draw": 0.2462,
+   "p_b": 0.5063,
+   "played": false
+  },
+  {
+   "match_no": 66,
+   "date": "2026-06-26",
+   "venue": "Toronto",
+   "stage": "group",
+   "group": "I",
+   "team_a": {
+    "name": "Senegal",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/sen.png"
+   },
+   "team_b": {
+    "name": "Iraq",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/irq.png"
+   },
+   "p_a": 0.469,
+   "p_draw": 0.2518,
+   "p_b": 0.2792,
+   "played": false
+  },
+  {
+   "match_no": 67,
+   "date": "2026-06-27",
+   "venue": "Kansas City",
+   "stage": "group",
+   "group": "J",
+   "team_a": {
+    "name": "Algeria",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/alg.png"
+   },
+   "team_b": {
+    "name": "Austria",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/aut.png"
+   },
+   "p_a": 0.3101,
+   "p_draw": 0.2554,
+   "p_b": 0.4345,
+   "played": false
+  },
+  {
+   "match_no": 68,
+   "date": "2026-06-27",
+   "venue": "Arlington",
+   "stage": "group",
+   "group": "J",
+   "team_a": {
+    "name": "Jordan",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/jor.png"
+   },
+   "team_b": {
+    "name": "Argentina",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/arg.png"
+   },
+   "p_a": 0.1456,
+   "p_draw": 0.2128,
+   "p_b": 0.6416,
+   "played": false
+  },
+  {
+   "match_no": 69,
+   "date": "2026-06-27",
+   "venue": "Miami Gardens",
+   "stage": "group",
+   "group": "K",
+   "team_a": {
+    "name": "Colombia",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/col.png"
+   },
+   "team_b": {
+    "name": "Portugal",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/por.png"
+   },
+   "p_a": 0.3592,
+   "p_draw": 0.2581,
+   "p_b": 0.3827,
+   "played": false
+  },
+  {
+   "match_no": 70,
+   "date": "2026-06-27",
+   "venue": "Atlanta",
+   "stage": "group",
+   "group": "K",
+   "team_a": {
+    "name": "DR Congo",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/cgo.png"
+   },
+   "team_b": {
+    "name": "Uzbekistan",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/uzb.png"
+   },
+   "p_a": 0.2749,
+   "p_draw": 0.2511,
+   "p_b": 0.474,
+   "played": false
+  },
+  {
+   "match_no": 71,
+   "date": "2026-06-27",
+   "venue": "East Rutherford",
+   "stage": "group",
+   "group": "L",
+   "team_a": {
+    "name": "Panama",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/pan.png"
+   },
+   "team_b": {
+    "name": "England",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/eng.png"
+   },
+   "p_a": 0.2258,
+   "p_draw": 0.2413,
+   "p_b": 0.5329,
+   "played": false
+  },
+  {
+   "match_no": 72,
+   "date": "2026-06-27",
+   "venue": "Philadelphia",
+   "stage": "group",
+   "group": "L",
+   "team_a": {
+    "name": "Croatia",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/cro.png"
+   },
+   "team_b": {
+    "name": "Ghana",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/gha.png"
+   },
+   "p_a": 0.6444,
+   "p_draw": 0.2119,
+   "p_b": 0.1437,
+   "played": false
   }
  ]
 };

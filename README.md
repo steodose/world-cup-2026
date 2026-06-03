@@ -78,18 +78,21 @@ Then re-run `python run.py` and refresh the page.
 data/groups.csv     teams, group, logo URL  (source of truth for names + logos)
 data/ratings.csv    one column per rating source (elo, + any you add)
 data/results.csv    played matches to lock (blank until the tournament starts)
-sim/                config, ratings, match model, bracket, simulator, export
+data/fixtures.csv   the static 2026 schedule (match no, date, venue, teams)
+sim/                config, ratings, match model, matches, bracket, simulator, export
 fetch_ratings.py    populate the Elo column (scrape + baked-in fallback)
-run.py              build ratings -> simulate -> write site/data.json
+run.py              build ratings -> simulate -> write site/data.json + CSVs
 site/               static dashboard (index.html, style.css, app.js, data.json)
-data/simulations.csv  latest sim as a tidy CSV (one row per team) for analysis
+data/simulations.csv       latest per-team stage probabilities (one row per team)
+data/match_predictions.csv latest per-match win/draw/loss (one row per fixture)
 ```
 
-`simulations.csv` is regenerated on every `python run.py` and committed to the
-repo, so anyone can download it and do further analysis without running the
-model. It has one row per team with the global rank, composite rating, each
-source rating (`rating_elo`, `rating_kuleuven`, …), projected group points, and
-every stage probability as a 0–1 fraction.
+Both CSVs are regenerated on every `python run.py` and committed to the repo, so
+anyone can download them and do further analysis without running the model.
+`simulations.csv` has one row per team (global rank, composite + per-source
+ratings, projected points, every stage probability as a 0–1 fraction).
+`match_predictions.csv` has one row per scheduled match with the model's
+win/draw/loss split and the final score once it's played.
 
 The `site/` folder is fully static and can be deployed as-is to GitHub Pages or
 any static host.

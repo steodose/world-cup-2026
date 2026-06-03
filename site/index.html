@@ -28,6 +28,7 @@
 
   <nav class="tabs">
     <button class="tab is-active" data-tab="groups">Group Stage</button>
+    <button class="tab" data-tab="matches">Matches</button>
     <button class="tab" data-tab="simulations">Simulations</button>
     <button class="tab" data-tab="how">How This Works</button>
   </nav>
@@ -43,6 +44,23 @@
         <button id="dl-groups-png" class="dl-btn">⬇&nbsp; Download PNG</button>
       </div>
       <div id="group-grid" class="group-grid"></div>
+    </section>
+
+    <section id="matches" class="panel">
+      <p class="panel-intro">
+        Model win / draw / loss probability for every group-stage match. Bars
+        read left to right: the left team's chance of winning, a draw, then the
+        right team's chance. Completed matches show the final score.
+      </p>
+      <div class="panel-actions">
+        <button id="dl-matches-csv" class="dl-btn">⬇&nbsp; Download CSV</button>
+        <div class="match-legend">
+          <span><i class="sw sw-a"></i> Win</span>
+          <span><i class="sw sw-d"></i> Draw</span>
+          <span><i class="sw sw-b"></i> Win</span>
+        </div>
+      </div>
+      <div id="match-list" class="match-list"></div>
     </section>
 
     <section id="simulations" class="panel">

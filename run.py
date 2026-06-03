@@ -24,6 +24,7 @@ def main():
     result = simulate.run(n_sims=args.sims, seed=args.seed)
     path = export.write_json(result)
     csv_path = export.write_csv(result)
+    matches_csv_path = export.write_matches_csv(result)
     elapsed = time.time() - start
 
     teams = result["teams"]
@@ -32,6 +33,7 @@ def main():
     order = sorted(range(len(teams)), key=lambda i: -champ[i])
     print(f"\nWrote {path} ({n:,} sims in {elapsed:.1f}s)")
     print(f"Wrote {csv_path}")
+    print(f"Wrote {matches_csv_path}")
     print("Title favorites:")
     for i in order[:5]:
         print(f"  {champ[i] / n * 100:5.1f}%  {teams[i].name}")

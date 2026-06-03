@@ -29,11 +29,13 @@ verification — run them as modules from the repo root, e.g.:
 python -m sim.ratings        # print top-10 composite ratings
 python -m sim.tournament     # validate all 495 third-place bracket combinations
 python -m sim.simulate       # run a sim and print champion odds + invariant checks
+python -m sim.matches        # print first few fixtures with win/draw/loss splits
 ```
 
 ## Pipeline / data flow
 
-`data/*.csv` → `run.py` → `sim.simulate.run()` → `sim.export.write_json()` → `site/data.json` → `site/app.js`.
+`data/*.csv` → `run.py` → `sim.simulate.run()` → `sim.export` (`write_json` + `write_csv` +
+`write_matches_csv`) → `site/data.json` (+ `data/*.csv`) → `site/app.js`.
 
 `run.py` is the single entry point. The whole simulation is **vectorized across all N simulations
 at once** — nearly every array in `sim/simulate.py` has shape `(N, ...)` and there is no per-sim
@@ -52,8 +54,13 @@ team id (0–47), not on individual matches/sims.
   73–104) and the third-place-team → bracket-slot assignment solver.
 - `simulate.py` — orchestrates the Monte-Carlo: group stage, third-place qualification, bracket
   assembly, knockout rounds; applies result-locking; returns counters.
-- `export.py` — turns counters into the `data.json` payload (per-team stage probabilities + group
-  finishing-position probabilities).
+- `matches.py` — per-match win/draw/loss for the scheduled fixtures (`data/fixtures.csv`), computed
+  **analytically** from the same Poisson scoring rates the sim uses (no simulation): build the
+  joint scoreline grid and sum below/on/above the diagonal. Merges in played scores from
+  `results.csv`. Feeds the dashboard's Matches tab.
+- `export.py` — turns counters into the `data.json` payload (per-team stage probabilities, group
+  finishing-position probabilities, and the `matches` array). Also writes two committed CSVs:
+  `data/simulations.csv` (per team) and `data/match_predictions.csv` (per match).
 
 ## Key architectural facts (non-obvious)
 
@@ -74,8 +81,13 @@ team id (0–47), not on individual matches/sims.
 - **Result-locking.** Any row in `data/results.csv` (`stage` = `group` or `ko`) forces that match's
   real outcome instead of simulating it; everything else is still simulated, so the forecast
   conditions on results as they come in. Drawn knockout matches need a 6th `winner` column.
+- **Fixtures are a static seed, not generated.** `data/fixtures.csv` holds the official 2026
+  group-stage schedule (72 rows: match no, date, venue, group, both teams). Within-group pairings
+  do **not** follow the textbook 1v2/3v4 pattern, so they were sourced from the real schedule, not
+  derived. Team names must match `groups.csv` exactly. Knockout fixtures aren't included (teams are
+  TBD until the bracket fills), so the Matches tab is group-stage only for now.
 - **Frontend is dependency-free.** `site/` is plain HTML/CSS/vanilla JS reading `data.json` (no build
-  step, no framework). Tabs are hash-routed (`#groups` / `#knockout`). It must be served over http,
-  not opened as a `file://` URL, because it `fetch()`es `data.json`.
+  step, no framework). Tabs are hash-routed (`#groups` / `#matches` / `#simulations` / `#how`). It
+  must be served over http, not opened as a `file://` URL, because it `fetch()`es `data.json`.
 
 See `README.md` for the user-facing update workflow.

@@ -7,6 +7,7 @@ from datetime import datetime, timezone
 import numpy as np
 
 from sim import config
+from sim.matches import build_matches
 from sim.tournament import GROUP_LETTERS
 
 
@@ -53,6 +54,8 @@ def build_payload(result):
         members.sort(key=lambda r: (-r["advance"], -r["proj_points"]))
         groups.append({"letter": letter, "teams": members})
 
+    matches = build_matches(teams)
+
     return {
         "meta": {
             "generated": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
@@ -63,6 +66,7 @@ def build_payload(result):
         },
         "groups": groups,
         "teams": sorted(team_rows, key=lambda r: -r["champion"]),
+        "matches": matches,
     }
 
 
@@ -130,4 +134,34 @@ def write_csv(result, path=None):
                         "semi_finals", "final", "champion"):
                 row[key] = prob(t[key])
             writer.writerow(row)
+    return path
+
+
+def write_matches_csv(result, path=None):
+    """Write per-match win/draw/loss predictions (+ any played score) to CSV."""
+    path = path or config.MATCHES_CSV
+    matches = build_matches(result["teams"])
+    fieldnames = ["match_no", "date", "venue", "stage", "group",
+                  "team_a", "team_b", "p_a_win", "p_draw", "p_b_win",
+                  "played", "score_a", "score_b"]
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with open(path, "w", encoding="utf-8", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer.writeheader()
+        for m in matches:
+            writer.writerow({
+                "match_no": m["match_no"],
+                "date": m["date"],
+                "venue": m["venue"],
+                "stage": m["stage"],
+                "group": m["group"],
+                "team_a": m["team_a"]["name"],
+                "team_b": m["team_b"]["name"],
+                "p_a_win": m["p_a"],
+                "p_draw": m["p_draw"],
+                "p_b_win": m["p_b"],
+                "played": int(m["played"]),
+                "score_a": m.get("score_a", ""),
+                "score_b": m.get("score_b", ""),
+            })
     return path

@@ -17,11 +17,13 @@ SITE_DIR = ROOT / "site"
 GROUPS_CSV = DATA_DIR / "groups.csv"
 RATINGS_CSV = DATA_DIR / "ratings.csv"
 RESULTS_CSV = DATA_DIR / "results.csv"
+FIXTURES_CSV = DATA_DIR / "fixtures.csv"
 DATA_JSON = SITE_DIR / "data.json"
 
-# Tidy CSV of the latest simulation, committed to the repo so anyone can do
-# further analysis without running the model. Regenerated on every `run.py`.
+# Tidy CSVs committed to the repo so anyone can do further analysis without
+# running the model. Regenerated on every `run.py`.
 SIMS_CSV = DATA_DIR / "simulations.csv"
+MATCHES_CSV = DATA_DIR / "match_predictions.csv"
 
 # ---------------------------------------------------------------------------
 # Composite ratings

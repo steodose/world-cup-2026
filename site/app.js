@@ -149,6 +149,71 @@ function renderKnockout() {
   });
 }
 
+/* ---------------- Matches ---------------- */
+let MATCHES = [];
+
+function fmtDate(iso) {
+  const d = new Date(iso + "T00:00:00");
+  return d.toLocaleDateString("en-US",
+    { weekday: "short", month: "short", day: "numeric" });
+}
+
+function stackedBar(m) {
+  const bar = el("div", "m-bar");
+  const segs = [["seg-a", m.p_a], ["seg-d", m.p_draw], ["seg-b", m.p_b]];
+  for (const [cls, p] of segs) {
+    const s = el("div", "seg " + cls);
+    s.style.width = (p * 100).toFixed(1) + "%";
+    if (p >= 0.08) s.textContent = Math.round(p * 100) + "%";
+    s.title = Math.round(p * 100) + "%";
+    bar.appendChild(s);
+  }
+  return bar;
+}
+
+function matchCard(m) {
+  const aWin = m.played && m.score_a > m.score_b;
+  const bWin = m.played && m.score_b > m.score_a;
+
+  const row = el("div", "match");
+
+  const teamA = el("div", "m-team m-team-a" + (aWin ? " win" : ""));
+  teamA.appendChild(el("span", "m-name", m.team_a.name));
+  teamA.appendChild(flag(m.team_a));
+  row.appendChild(teamA);
+
+  if (m.played) {
+    row.appendChild(el("div", "m-score", `${m.score_a}–${m.score_b}`));
+  } else {
+    row.appendChild(stackedBar(m));
+  }
+
+  const teamB = el("div", "m-team m-team-b" + (bWin ? " win" : ""));
+  teamB.appendChild(flag(m.team_b));
+  teamB.appendChild(el("span", "m-name", m.team_b.name));
+  row.appendChild(teamB);
+
+  const card = el("div", "match-card" + (m.played ? " is-played" : ""));
+  card.appendChild(row);
+  const tag = m.played ? "FT" : "Group " + m.group;
+  card.appendChild(el("div", "m-meta", `${m.venue} · ${tag}`));
+  return card;
+}
+
+function renderMatches(matches) {
+  const wrap = document.getElementById("match-list");
+  if (!wrap) return;
+  wrap.innerHTML = "";
+  let curDate = null;
+  for (const m of matches) {
+    if (m.date !== curDate) {
+      curDate = m.date;
+      wrap.appendChild(el("div", "match-date", fmtDate(m.date)));
+    }
+    wrap.appendChild(matchCard(m));
+  }
+}
+
 /* ---------------- Tabs + boot ---------------- */
 function activateTab(name) {
   const tabs = document.querySelectorAll(".tab");
@@ -249,10 +314,38 @@ function downloadSimsCsv() {
   triggerBlobDownload(blob, `wc2026-simulations-${DATE_STR}.csv`);
 }
 
+function downloadMatchesCsv() {
+  const cols = [
+    ["match_no", "Match"], ["date", "Date"], ["venue", "Venue"],
+    ["group", "Group"], ["a", "TeamA"], ["b", "TeamB"],
+    ["p_a", "WinA"], ["p_draw", "Draw"], ["p_b", "WinB"],
+    ["played", "Played"], ["sa", "ScoreA"], ["sb", "ScoreB"],
+  ];
+  const esc = (v) => {
+    const s = String(v);
+    return /[",\n]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s;
+  };
+  const lines = [cols.map((c) => c[1]).join(",")];
+  for (const m of MATCHES) {
+    const flat = {
+      match_no: m.match_no, date: m.date, venue: m.venue, group: m.group,
+      a: m.team_a.name, b: m.team_b.name,
+      p_a: m.p_a.toFixed(4), p_draw: m.p_draw.toFixed(4), p_b: m.p_b.toFixed(4),
+      played: m.played ? 1 : 0,
+      sa: m.played ? m.score_a : "", sb: m.played ? m.score_b : "",
+    };
+    lines.push(cols.map(([k]) => esc(flat[k])).join(","));
+  }
+  const blob = new Blob([lines.join("\n") + "\n"], { type: "text/csv;charset=utf-8" });
+  triggerBlobDownload(blob, `wc2026-match-predictions-${DATE_STR}.csv`);
+}
+
 function setupDownloads() {
   const groupsBtn = document.getElementById("dl-groups-png");
   const simsPngBtn = document.getElementById("dl-sims-png");
   const simsCsvBtn = document.getElementById("dl-sims-csv");
+  const matchesCsvBtn = document.getElementById("dl-matches-csv");
+  if (matchesCsvBtn) matchesCsvBtn.onclick = downloadMatchesCsv;
   if (groupsBtn) groupsBtn.onclick = () =>
     capturePng(document.getElementById("group-grid"),
                `wc2026-group-stage-${DATE_STR}.png`, groupsBtn, true);
@@ -288,7 +381,9 @@ async function boot() {
   DATE_STR = (m.generated || "").split(" ")[0] ||
              new Date().toISOString().slice(0, 10);
   TEAMS = data.teams;
+  MATCHES = data.matches || [];
   renderGroups(data.groups);
+  renderMatches(MATCHES);
   renderKnockout();
   setupDownloads();
 }
