@@ -28,8 +28,8 @@
 
   <nav class="tabs">
     <button class="tab is-active" data-tab="groups">Group Stage</button>
-    <button class="tab" data-tab="matches">Matches</button>
     <button class="tab" data-tab="simulations">Simulations</button>
+    <button class="tab" data-tab="matches">Matches</button>
     <button class="tab" data-tab="how">How This Works</button>
   </nav>
 
@@ -44,21 +44,6 @@
         <button id="dl-groups-png" class="dl-btn">⬇&nbsp; Download PNG</button>
       </div>
       <div id="group-grid" class="group-grid"></div>
-    </section>
-
-    <section id="matches" class="panel">
-      <p class="panel-intro">
-        Model win / draw / loss probability for every group-stage match.
-      </p>
-      <div class="panel-actions">
-        <button id="dl-matches-csv" class="dl-btn">⬇&nbsp; Download CSV</button>
-        <div class="match-legend">
-          <span><i class="sw sw-a"></i> Home Win</span>
-          <span><i class="sw sw-d"></i> Draw</span>
-          <span><i class="sw sw-b"></i> Away Win</span>
-        </div>
-      </div>
-      <div id="match-list" class="match-list"></div>
     </section>
 
     <section id="simulations" class="panel">
@@ -78,6 +63,21 @@
       </div>
     </section>
 
+    <section id="matches" class="panel">
+      <p class="panel-intro">
+        Model win / draw / loss probability for every group-stage match.
+      </p>
+      <div class="panel-actions">
+        <button id="dl-matches-csv" class="dl-btn">⬇&nbsp; Download CSV</button>
+        <div class="match-legend">
+          <span><i class="sw sw-a"></i> Home Win</span>
+          <span><i class="sw sw-d"></i> Draw</span>
+          <span><i class="sw sw-b"></i> Away Win</span>
+        </div>
+      </div>
+      <div id="match-list" class="match-list"></div>
+    </section>
+
     <section id="how" class="panel">
       <div class="explainer">
         <p class="lead">
@@ -92,10 +92,11 @@
           available rating systems. Each source is normalized to a common scale
           (mean 1500, standard deviation 150) so that systems expressed in
           different units can be compared fairly, then blended together with
-          configurable weights. The composite currently combines two sources,
-          weighted 60/40 toward the <strong>KU Leuven DTAI Sports Analytics
-          Lab</strong> model over <strong>World Football Elo</strong>
-          (eloratings.net).
+          configurable weights. The composite currently combines three sources:
+          the <strong>KU Leuven DTAI Sports Analytics Lab</strong> model and
+          Nate Silver's <strong>PELE</strong> ratings (Silver Bulletin), each
+          weighted twice as heavily as <strong>World Football Elo</strong>
+          (eloratings.net) &mdash; a 40 / 40 / 20 split.
         </p>
 
         <h2>2 &middot; From ratings to match probabilities</h2>
@@ -144,7 +145,8 @@
     A <a href="https://betweenthepipes.substack.com" target="_blank" rel="noopener"><strong>Between the Pipes</strong></a>
     project by <a href="https://stephanteodosescu.com" target="_blank" rel="noopener">Stephan Teodosescu</a>
     &middot; Data: <a href="https://www.eloratings.net" target="_blank" rel="noopener">eloratings.net</a>,
-    <a href="https://dtai.cs.kuleuven.be/sports/worldcup2026/" target="_blank" rel="noopener">KU Leuven</a>
+    <a href="https://dtai.cs.kuleuven.be/sports/worldcup2026/" target="_blank" rel="noopener">KU Leuven</a>,
+    <a href="https://www.natesilver.net" target="_blank" rel="noopener">Silver Bulletin</a>
     &middot; <a href="https://github.com/steodose/world-cup-2026" target="_blank" rel="noopener">Source Code</a>
   </footer>
 

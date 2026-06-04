@@ -50,9 +50,10 @@ cd site && python -m http.server 8000   # then open http://localhost:8000
 **Add/replace rating sources (the composite).**
 - Run `python fetch_ratings.py` to (re)populate the `elo` column (eloratings.net).
 - Run `python fetch_kuleuven.py` to (re)populate the `kuleuven` column (KU Leuven
-  DTAI model). The composite ships blending these two 50/50 (see `WEIGHTS` in
-  `sim/config.py`).
-- To add another source (e.g. FIFA ranking, Nate Silver): add a new column to
+  DTAI model). The composite ships blending three sources &mdash; KU Leuven and
+  Nate Silver's PELE ratings each weighted 0.40, World Football Elo 0.20 (see
+  `WEIGHTS` in `sim/config.py`).
+- To add another source (e.g. FIFA ranking): add a new column to
   `data/ratings.csv` with one value per team, then add that column name to
   `WEIGHTS` in `sim/config.py` with a weight. No other code changes needed. Raw
   units don't matter — each source is normalized, and the blended composite is

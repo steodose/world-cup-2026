@@ -1,49 +1,49 @@
-team,elo,kuleuven
-Mexico,1868,1800
-South Korea,1756,1754
-South Africa,1517,1527
-Czech Republic,1733,1692
-Canada,1784,1741
-Switzerland,1894,1782
-Qatar,1423,1591
-Bosnia & Herzegovina,1591,1589
-Brazil,1988,1886
-Morocco,1822,1737
-Scotland,1770,1685
-Haiti,1532,1583
-USA,1733,1766
-Australia,1775,1747
-Paraguay,1833,1706
-Turkey,1902,1772
-Germany,1925,1867
-Ecuador,1935,1794
-Ivory Coast,1676,1619
-Curaçao,1433,1520
-Netherlands,1961,1868
-Japan,1906,1834
-Tunisia,1636,1583
-Sweden,1714,1701
-Belgium,1867,1817
-Iran,1764,1758
-Egypt,1699,1633
-New Zealand,1585,1599
-Spain,2165,1979
-Uruguay,1892,1803
-Saudi Arabia,1566,1617
-Cape Verde,1576,1489
-France,2081,1940
-Senegal,1866,1728
-Norway,1917,1747
-Iraq,1608,1653
-Argentina,2113,1965
-Austria,1827,1749
-Algeria,1743,1660
-Jordan,1685,1628
-Portugal,1984,1875
-Colombia,1975,1855
-Uzbekistan,1727,1712
-DR Congo,1655,1539
-England,2020,1886
-Croatia,1930,1821
-Ghana,1503,1478
-Panama,1733,1699
+team,elo,kuleuven,silver
+Mexico,1868,1800,1853
+South Korea,1756,1754,1770
+South Africa,1517,1527,1667
+Czech Republic,1733,1692,1769
+Canada,1784,1741,1806
+Switzerland,1894,1782,1889
+Qatar,1423,1591,1550
+Bosnia & Herzegovina,1591,1589,1706
+Brazil,1988,1886,1989
+Morocco,1822,1737,1866
+Scotland,1770,1685,1802
+Haiti,1532,1583,1637
+USA,1733,1766,1810
+Australia,1775,1747,1772
+Paraguay,1833,1706,1855
+Turkey,1902,1772,1909
+Germany,1925,1867,1975
+Ecuador,1935,1794,1932
+Ivory Coast,1676,1619,1777
+Curaçao,1433,1520,1570
+Netherlands,1961,1868,1939
+Japan,1906,1834,1872
+Tunisia,1636,1583,1695
+Sweden,1714,1701,1781
+Belgium,1867,1817,1892
+Iran,1764,1758,1722
+Egypt,1699,1633,1770
+New Zealand,1585,1599,1639
+Spain,2165,1979,2077
+Uruguay,1892,1803,1931
+Saudi Arabia,1566,1617,1632
+Cape Verde,1576,1489,1621
+France,2081,1940,2026
+Senegal,1866,1728,1897
+Norway,1917,1747,1953
+Iraq,1608,1653,1653
+Argentina,2113,1965,2065
+Austria,1827,1749,1832
+Algeria,1743,1660,1794
+Jordan,1685,1628,1661
+Portugal,1984,1875,1972
+Colombia,1975,1855,1949
+Uzbekistan,1727,1712,1714
+DR Congo,1655,1539,1729
+England,2020,1886,2027
+Croatia,1930,1821,1877
+Ghana,1503,1478,1662
+Panama,1733,1699,1739

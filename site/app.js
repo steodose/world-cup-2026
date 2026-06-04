@@ -17,6 +17,14 @@ function pct(p) {
   return { text: v.toFixed(1) + "%", zero: false };
 }
 
+// Simulations table: always one decimal, regardless of magnitude.
+function pct1(p) {
+  const v = p * 100;
+  if (v <= 0) return { text: "—", zero: true };
+  if (v < 0.1) return { text: "<0.1%", zero: false };
+  return { text: v.toFixed(1) + "%", zero: false };
+}
+
 // Heatmap background for a probability cell (white -> amber).
 function heat(p) {
   const a = Math.pow(Math.min(p, 1), 0.7) * 0.9; // perceptual boost for small p
@@ -138,7 +146,7 @@ function renderKnockout() {
 
     for (const s of STAGES) {
       const p = t[s.key];
-      const info = pct(p);
+      const info = pct1(p);
       const td = el("td");
       const div = el("div", "prob" + (info.zero ? " zero" : ""), info.text);
       if (!info.zero) div.style.background = heat(p);
@@ -178,7 +186,10 @@ function matchCard(m) {
   const row = el("div", "match");
 
   const teamA = el("div", "m-team m-team-a" + (aWin ? " win" : ""));
-  teamA.appendChild(el("span", "m-name", m.team_a.name));
+  const aInfo = el("div", "m-name-wrap");
+  aInfo.appendChild(el("span", "m-name", m.team_a.name));
+  aInfo.appendChild(el("span", "m-xg", m.xg_a.toFixed(1) + " xG"));
+  teamA.appendChild(aInfo);
   teamA.appendChild(flag(m.team_a));
   row.appendChild(teamA);
 
@@ -190,7 +201,10 @@ function matchCard(m) {
 
   const teamB = el("div", "m-team m-team-b" + (bWin ? " win" : ""));
   teamB.appendChild(flag(m.team_b));
-  teamB.appendChild(el("span", "m-name", m.team_b.name));
+  const bInfo = el("div", "m-name-wrap");
+  bInfo.appendChild(el("span", "m-name", m.team_b.name));
+  bInfo.appendChild(el("span", "m-xg", m.xg_b.toFixed(1) + " xG"));
+  teamB.appendChild(bInfo);
   row.appendChild(teamB);
 
   const card = el("div", "match-card" + (m.played ? " is-played" : ""));

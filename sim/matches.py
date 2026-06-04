@@ -89,6 +89,8 @@ def build_matches(teams):
                 "group": row.get("group", "").strip(),
                 "team_a": {"name": na, "logo": ta.logo},
                 "team_b": {"name": nb, "logo": tb.logo},
+                "xg_a": round(float(lam_a), 2),
+                "xg_b": round(float(lam_b), 2),
                 "p_a": round(p_a, 4),
                 "p_draw": round(p_draw, 4),
                 "p_b": round(p_b, 4),

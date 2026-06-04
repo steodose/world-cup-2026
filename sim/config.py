@@ -36,10 +36,10 @@ MATCHES_CSV = DATA_DIR / "match_predictions.csv"
 # To add a source later (e.g. Nate Silver): add its column to ratings.csv and
 # add an entry here. With a single active source the composite just equals it.
 WEIGHTS = {
-    "elo": 0.40,       # World Football Elo (eloratings.net)
-    "kuleuven": 0.60,  # KU Leuven DTAI model Elo
+    "elo": 0.20,       # World Football Elo (eloratings.net)
+    "kuleuven": 0.40,  # KU Leuven DTAI model Elo
+    "silver": 0.40,    # Nate Silver / Silver Bulletin "PELE" WC ratings
     # "fifa": 0.0,
-    # "silver": 0.0,
 }
 
 # Common scale that every normalized source is mapped onto.
