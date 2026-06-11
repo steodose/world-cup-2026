@@ -3890,3 +3890,8 @@ window.WC_DATA = {
    "xg_b": 0.86,
    "p_a": 0.6059,
    "p_draw": 0.2236,
+   "p_b": 0.1705,
+   "played": false
+  }
+ ]
+};
