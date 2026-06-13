@@ -1,6 +1,6 @@
 window.WC_DATA = {
  "meta": {
-  "generated": "2026-06-12 22:01 UTC",
+  "generated": "2026-06-13 16:19 UTC",
   "n_sims": 50000,
   "locked_group_matches": 3,
   "locked_ko_matches": 0,
