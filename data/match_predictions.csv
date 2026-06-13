@@ -2,7 +2,7 @@ match_no,date,venue,stage,group,team_a,team_b,p_a_win,p_draw,p_b_win,played,scor
 1,2026-06-11,Mexico City,group,A,Mexico,South Africa,0.5981,0.2257,0.1761,1,2,0
 2,2026-06-11,Zapopan,group,A,South Korea,Czech Republic,0.3943,0.2578,0.3479,1,2,1
 3,2026-06-12,Toronto,group,B,Canada,Bosnia & Herzegovina,0.5105,0.2455,0.244,1,1,1
-4,2026-06-12,Inglewood,group,D,USA,Paraguay,0.3984,0.2577,0.344,0,,
+4,2026-06-12,Inglewood,group,D,USA,Paraguay,0.3984,0.2577,0.344,1,4,1
 5,2026-06-13,Santa Clara,group,B,Qatar,Switzerland,0.1756,0.2255,0.5988,0,,
 6,2026-06-13,East Rutherford,group,C,Brazil,Morocco,0.479,0.2504,0.2705,0,,
 7,2026-06-13,Foxborough,group,C,Haiti,Scotland,0.2654,0.2496,0.4851,0,,
