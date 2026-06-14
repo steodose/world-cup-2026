@@ -3898,4 +3898,18 @@ window.WC_DATA = {
    "group": "L",
    "team_a": {
     "name": "Croatia",
- 
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/cro.png"
+   },
+   "team_b": {
+    "name": "Ghana",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/gha.png"
+   },
+   "xg_a": 1.84,
+   "xg_b": 0.86,
+   "p_a": 0.6059,
+   "p_draw": 0.2236,
+   "p_b": 0.1705,
+   "played": false
+  }
+ ]
+};
