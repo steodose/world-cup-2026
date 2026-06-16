@@ -12,7 +12,7 @@ match_no,date,venue,stage,group,team_a,team_b,p_a_win,p_draw,p_b_win,played,scor
 11,2026-06-14,Arlington,group,F,Netherlands,Japan,0.4092,0.2572,0.3337,1,2,2
 12,2026-06-14,Guadalupe,group,F,Sweden,Tunisia,0.4461,0.2544,0.2995,1,5,1
 13,2026-06-15,Seattle,group,G,Belgium,Egypt,0.4909,0.2487,0.2604,1,1,1
-14,2026-06-15,Inglewood,group,G,Iran,New Zealand,0.4713,0.2515,0.2772,0,,
+14,2026-06-15,Inglewood,group,G,Iran,New Zealand,0.4713,0.2515,0.2772,1,2,2
 15,2026-06-15,Atlanta,group,H,Spain,Cape Verde,0.7431,0.1744,0.0824,1,0,0
 16,2026-06-15,Miami Gardens,group,H,Saudi Arabia,Uruguay,0.1992,0.2337,0.5671,1,1,1
 17,2026-06-16,East Rutherford,group,I,France,Senegal,0.5084,0.2458,0.2457,0,,
