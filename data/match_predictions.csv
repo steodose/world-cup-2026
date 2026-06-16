@@ -14,7 +14,7 @@ match_no,date,venue,stage,group,team_a,team_b,p_a_win,p_draw,p_b_win,played,scor
 13,2026-06-15,Seattle,group,G,Belgium,Egypt,0.4909,0.2487,0.2604,1,1,1
 14,2026-06-15,Inglewood,group,G,Iran,New Zealand,0.4713,0.2515,0.2772,0,,
 15,2026-06-15,Atlanta,group,H,Spain,Cape Verde,0.7431,0.1744,0.0824,1,0,0
-16,2026-06-15,Miami Gardens,group,H,Saudi Arabia,Uruguay,0.1992,0.2337,0.5671,0,,
+16,2026-06-15,Miami Gardens,group,H,Saudi Arabia,Uruguay,0.1992,0.2337,0.5671,1,1,1
 17,2026-06-16,East Rutherford,group,I,France,Senegal,0.5084,0.2458,0.2457,0,,
 18,2026-06-16,Foxborough,group,I,Iraq,Norway,0.225,0.241,0.534,0,,
 19,2026-06-16,Kansas City,group,J,Argentina,Algeria,0.6038,0.2242,0.172,0,,
