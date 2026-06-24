@@ -39,14 +39,14 @@ match_no,date,venue,stage,group,team_a,team_b,p_a_win,p_draw,p_b_win,played,scor
 38,2026-06-21,Vancouver,group,G,New Zealand,Egypt,0.3085,0.2553,0.4362,1,1,3
 39,2026-06-21,Atlanta,group,H,Spain,Saudi Arabia,0.7018,0.1914,0.1067,1,4,0
 40,2026-06-21,Miami Gardens,group,H,Uruguay,Cape Verde,0.6126,0.2217,0.1658,1,2,2
-41,2026-06-22,Philadelphia,group,I,France,Iraq,0.6416,0.2128,0.1456,0,,
-42,2026-06-22,East Rutherford,group,I,Norway,Senegal,0.4003,0.2576,0.3421,0,,
-43,2026-06-22,Arlington,group,J,Argentina,Austria,0.5515,0.2373,0.2112,0,,
-44,2026-06-22,Santa Clara,group,J,Jordan,Algeria,0.3147,0.2558,0.4295,0,,
-45,2026-06-23,Houston,group,K,Portugal,Uzbekistan,0.5379,0.2402,0.2219,0,,
-46,2026-06-23,Zapopan,group,K,Colombia,DR Congo,0.5855,0.2291,0.1854,0,,
-47,2026-06-23,Foxborough,group,L,England,Ghana,0.6836,0.1983,0.1181,0,,
-48,2026-06-23,Toronto,group,L,Panama,Croatia,0.2711,0.2505,0.4783,0,,
+41,2026-06-22,Philadelphia,group,I,France,Iraq,0.6416,0.2128,0.1456,1,3,0
+42,2026-06-22,East Rutherford,group,I,Norway,Senegal,0.4003,0.2576,0.3421,1,3,2
+43,2026-06-22,Arlington,group,J,Argentina,Austria,0.5515,0.2373,0.2112,1,2,0
+44,2026-06-22,Santa Clara,group,J,Jordan,Algeria,0.3147,0.2558,0.4295,1,1,2
+45,2026-06-23,Houston,group,K,Portugal,Uzbekistan,0.5379,0.2402,0.2219,1,5,0
+46,2026-06-23,Zapopan,group,K,Colombia,DR Congo,0.5855,0.2291,0.1854,1,1,0
+47,2026-06-23,Foxborough,group,L,England,Ghana,0.6836,0.1983,0.1181,1,0,0
+48,2026-06-23,Toronto,group,L,Panama,Croatia,0.2711,0.2505,0.4783,1,0,1
 49,2026-06-24,Mexico City,group,A,Czech Republic,Mexico,0.2668,0.2498,0.4833,0,,
 50,2026-06-24,Guadalupe,group,A,South Africa,South Korea,0.2459,0.2459,0.5082,0,,
 51,2026-06-24,Vancouver,group,B,Switzerland,Canada,0.3894,0.2579,0.3527,0,,
