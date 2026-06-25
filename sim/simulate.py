@@ -65,9 +65,36 @@ def _load_results(name_to_id):
 
 def _rank_key(points, gd, gf, rng):
     """A single sortable key encoding points > goal difference > goals for, with
-    a uniform random tiebreaker. Higher is better."""
+    a uniform random tiebreaker. Higher is better.
+
+    Used for cross-group ranking of third-placed teams, where head-to-head does
+    not apply (those teams never met). For ranking *within* a group, use
+    `_group_order`, which inserts the 2026 head-to-head criteria."""
     rand = rng.random(points.shape)
     return points * 1e7 + gd * 1e3 + gf * 1.0 + rand
+
+
+def _group_order(pts, gd, gf, h2h_pts, h2h_gd, h2h_gf, rng):
+    """Best-first ordering of the 4 teams in each group under the 2026 World Cup
+    tie-breaking rules, vectorized over sims. Shapes: per-team stats are (N, 4);
+    head-to-head stats are (N, 4) mini-table sums already restricted to the tied
+    teams. Criteria, most significant first:
+
+        overall points > H2H points > H2H goal difference > H2H goals for
+        > overall goal difference > overall goals for > random
+
+    The defining 2026 change is that the head-to-head mini-table (among teams
+    level on overall points) outranks overall goal difference.
+
+    np.lexsort treats its *last* key as primary and sorts ascending, so we list
+    keys least-significant first and reverse to get best-first. (Limitation: the
+    mini-table is computed once over all teams level on points; FIFA's exact rule
+    re-applies the H2H criteria recursively to any still-tied subset — a rare
+    edge case in 3-way ties that this does not unwind.)"""
+    rand = rng.random(pts.shape)
+    keys = np.stack([rand, gf, gd, h2h_gf, h2h_gd, h2h_pts, pts])  # primary last
+    order = np.lexsort(keys, axis=-1)        # ascending, worst-first
+    return order[:, ::-1]                    # best-first
 
 
 def run(n_sims=None, seed=None, verbose=True):
@@ -124,6 +151,10 @@ def run(n_sims=None, seed=None, verbose=True):
         pts = np.zeros((N, 4), dtype=np.float64)
         gf = np.zeros((N, 4), dtype=np.float64)
         ga = np.zeros((N, 4), dtype=np.float64)  # goals against
+        # per-pair head-to-head record, [:, i, j] = team i's result vs team j
+        hh_pts = np.zeros((N, 4, 4), dtype=np.float64)
+        hh_gf = np.zeros((N, 4, 4), dtype=np.float64)
+        hh_ga = np.zeros((N, 4, 4), dtype=np.float64)
 
         for a, b in GROUP_FIXTURES:
             ida, idb = int(ids[a]), int(ids[b])
@@ -137,16 +168,27 @@ def run(n_sims=None, seed=None, verbose=True):
                 goals_a = rng.poisson(lam_a, size=N)
                 goals_b = rng.poisson(lam_b, size=N)
 
-            pts[:, a] += np.where(goals_a > goals_b, 3,
-                                  np.where(goals_a == goals_b, 1, 0))
-            pts[:, b] += np.where(goals_b > goals_a, 3,
-                                  np.where(goals_b == goals_a, 1, 0))
+            pa = np.where(goals_a > goals_b, 3, np.where(goals_a == goals_b, 1, 0))
+            pb = np.where(goals_b > goals_a, 3, np.where(goals_b == goals_a, 1, 0))
+            pts[:, a] += pa
+            pts[:, b] += pb
             gf[:, a] += goals_a; ga[:, a] += goals_b
             gf[:, b] += goals_b; ga[:, b] += goals_a
+            hh_pts[:, a, b] = pa;      hh_pts[:, b, a] = pb
+            hh_gf[:, a, b] = goals_a;  hh_gf[:, b, a] = goals_b
+            hh_ga[:, a, b] = goals_b;  hh_ga[:, b, a] = goals_a
 
         gd = gf - ga
-        key = _rank_key(pts, gd, gf, rng)            # (N,4)
-        order = np.argsort(-key, axis=1)             # best-first local indices
+
+        # 2026 head-to-head mini-table: restrict each team's H2H record to the
+        # opponents it is level with on overall points, then sum.
+        level = (pts[:, :, None] == pts[:, None, :])        # (N,4,4)
+        level &= ~np.eye(4, dtype=bool)[None]               # drop self
+        h2h_pts = (hh_pts * level).sum(axis=2)              # (N,4)
+        h2h_gd = ((hh_gf - hh_ga) * level).sum(axis=2)
+        h2h_gf = (hh_gf * level).sum(axis=2)
+
+        order = _group_order(pts, gd, gf, h2h_pts, h2h_gd, h2h_gf, rng)  # best-first
 
         # global ids by finishing position
         ids_by_pos = ids[order]                      # (N,4) global ids
