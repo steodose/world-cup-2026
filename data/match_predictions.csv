@@ -65,9 +65,9 @@ match_no,date,venue,stage,group,team_a,team_b,p_a_win,p_draw,p_b_win,played,scor
 64,2026-06-26,Zapopan,group,H,Uruguay,Spain,0.2456,0.2458,0.5086,1,0,1
 65,2026-06-26,Foxborough,group,I,Norway,France,0.2715,0.2506,0.4779,1,1,4
 66,2026-06-26,Toronto,group,I,Senegal,Iraq,0.5034,0.2467,0.2499,1,5,0
-67,2026-06-27,Kansas City,group,J,Algeria,Austria,0.3216,0.2564,0.422,0,,
-68,2026-06-27,Arlington,group,J,Jordan,Argentina,0.1318,0.2059,0.6622,0,,
-69,2026-06-27,Miami Gardens,group,K,Colombia,Portugal,0.3564,0.258,0.3855,0,,
-70,2026-06-27,Atlanta,group,K,DR Congo,Uzbekistan,0.3122,0.2556,0.4322,0,,
-71,2026-06-27,East Rutherford,group,L,Panama,England,0.2052,0.2356,0.5592,0,,
-72,2026-06-27,Philadelphia,group,L,Croatia,Ghana,0.6059,0.2236,0.1705,0,,
+67,2026-06-27,Kansas City,group,J,Algeria,Austria,0.3216,0.2564,0.422,1,3,3
+68,2026-06-27,Arlington,group,J,Jordan,Argentina,0.1318,0.2059,0.6622,1,1,3
+69,2026-06-27,Miami Gardens,group,K,Colombia,Portugal,0.3564,0.258,0.3855,1,0,0
+70,2026-06-27,Atlanta,group,K,DR Congo,Uzbekistan,0.3122,0.2556,0.4322,1,3,1
+71,2026-06-27,East Rutherford,group,L,Panama,England,0.2052,0.2356,0.5592,1,0,2
+72,2026-06-27,Philadelphia,group,L,Croatia,Ghana,0.6059,0.2236,0.1705,1,2,1
