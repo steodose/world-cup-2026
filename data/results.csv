@@ -1,75 +1,77 @@
-stage,team_a,team_b,score_a,score_b
-group,Mexico,South Africa,2,0
-group,South Korea,Czech Republic,2,1
-group,Canada,Bosnia & Herzegovina,1,1
-group,USA,Paraguay,4,1
-group,Qatar,Switzerland,1,1
-group,Brazil,Morocco,1,1
-group,Haiti,Scotland,0,1
-group,Australia,Turkey,2,0
-group,Germany,Curaçao,7,1
-group,Netherlands,Japan,2,2
-group,Ivory Coast,Ecuador,1,0
-group,Sweden,Tunisia,5,1
-group,Spain,Cape Verde,0,0
-group,Belgium,Egypt,1,1
-group,Saudi Arabia,Uruguay,1,1
-group,Iran,New Zealand,2,2
-group,France,Senegal,3,1
-group,Iraq,Norway,1,4
-group,Argentina,Algeria,3,0
-group,Austria,Jordan,3,1
-group,Portugal,DR Congo,1,1
-group,Uzbekistan,Colombia,1,3
-group,England,Croatia,4,2
-group,Ghana,Panama,1,0
-group,Czech Republic,South Africa,1,1
-group,Mexico,South Korea,1,0
-group,Switzerland,Bosnia & Herzegovina,4,1
-group,Canada,Qatar,6,0
-group,Scotland,Morocco,0,1
-group,Brazil,Haiti,3,0
-group,USA,Australia,2,0
-group,Turkey,Paraguay,0,1
-group,Germany,Ivory Coast,2,1
-group,Ecuador,Curaçao,0,0
-group,Netherlands,Sweden,5,1
-group,Tunisia,Japan,0,4
-group,Belgium,Iran,0,0
-group,New Zealand,Egypt,1,3
-group,Spain,Saudi Arabia,4,0
-group,Uruguay,Cape Verde,2,2
-group,France,Iraq,3,0
-group,Norway,Senegal,3,2
-group,Argentina,Austria,2,0
-group,Jordan,Algeria,1,2
-group,Portugal,Uzbekistan,5,0
-group,Colombia,DR Congo,1,0
-group,England,Ghana,0,0
-group,Panama,Croatia,0,1
-group,Czech Republic,Mexico,0,3
-group,South Africa,South Korea,1,0
-group,Switzerland,Canada,2,1
-group,Bosnia & Herzegovina,Qatar,3,1
-group,Scotland,Brazil,0,3
-group,Morocco,Haiti,4,2
-group,Turkey,USA,3,2
-group,Paraguay,Australia,0,0
-group,Curaçao,Ivory Coast,0,2
-group,Ecuador,Germany,2,1
-group,Japan,Sweden,1,1
-group,Tunisia,Netherlands,1,3
-group,Egypt,Iran,1,1
-group,New Zealand,Belgium,1,5
-group,Cape Verde,Saudi Arabia,0,0
-group,Uruguay,Spain,0,1
-group,Norway,France,1,4
-group,Senegal,Iraq,5,0
-group,Algeria,Austria,3,3
-group,Jordan,Argentina,1,3
-group,Colombia,Portugal,0,0
-group,DR Congo,Uzbekistan,3,1
-group,Panama,England,0,2
-group,Croatia,Ghana,2,1
-ko,South Africa,Canada,0,1
-ko,Brazil,Japan,2,1
+stage,team_a,team_b,score_a,score_b,winner
+group,Mexico,South Africa,2,0,
+group,South Korea,Czech Republic,2,1,
+group,Canada,Bosnia & Herzegovina,1,1,
+group,USA,Paraguay,4,1,
+group,Qatar,Switzerland,1,1,
+group,Brazil,Morocco,1,1,
+group,Haiti,Scotland,0,1,
+group,Australia,Turkey,2,0,
+group,Germany,Curaçao,7,1,
+group,Netherlands,Japan,2,2,
+group,Ivory Coast,Ecuador,1,0,
+group,Sweden,Tunisia,5,1,
+group,Spain,Cape Verde,0,0,
+group,Belgium,Egypt,1,1,
+group,Saudi Arabia,Uruguay,1,1,
+group,Iran,New Zealand,2,2,
+group,France,Senegal,3,1,
+group,Iraq,Norway,1,4,
+group,Argentina,Algeria,3,0,
+group,Austria,Jordan,3,1,
+group,Portugal,DR Congo,1,1,
+group,Uzbekistan,Colombia,1,3,
+group,England,Croatia,4,2,
+group,Ghana,Panama,1,0,
+group,Czech Republic,South Africa,1,1,
+group,Mexico,South Korea,1,0,
+group,Switzerland,Bosnia & Herzegovina,4,1,
+group,Canada,Qatar,6,0,
+group,Scotland,Morocco,0,1,
+group,Brazil,Haiti,3,0,
+group,USA,Australia,2,0,
+group,Turkey,Paraguay,0,1,
+group,Germany,Ivory Coast,2,1,
+group,Ecuador,Curaçao,0,0,
+group,Netherlands,Sweden,5,1,
+group,Tunisia,Japan,0,4,
+group,Belgium,Iran,0,0,
+group,New Zealand,Egypt,1,3,
+group,Spain,Saudi Arabia,4,0,
+group,Uruguay,Cape Verde,2,2,
+group,France,Iraq,3,0,
+group,Norway,Senegal,3,2,
+group,Argentina,Austria,2,0,
+group,Jordan,Algeria,1,2,
+group,Portugal,Uzbekistan,5,0,
+group,Colombia,DR Congo,1,0,
+group,England,Ghana,0,0,
+group,Panama,Croatia,0,1,
+group,Czech Republic,Mexico,0,3,
+group,South Africa,South Korea,1,0,
+group,Switzerland,Canada,2,1,
+group,Bosnia & Herzegovina,Qatar,3,1,
+group,Scotland,Brazil,0,3,
+group,Morocco,Haiti,4,2,
+group,Turkey,USA,3,2,
+group,Paraguay,Australia,0,0,
+group,Curaçao,Ivory Coast,0,2,
+group,Ecuador,Germany,2,1,
+group,Japan,Sweden,1,1,
+group,Tunisia,Netherlands,1,3,
+group,Egypt,Iran,1,1,
+group,New Zealand,Belgium,1,5,
+group,Cape Verde,Saudi Arabia,0,0,
+group,Uruguay,Spain,0,1,
+group,Norway,France,1,4,
+group,Senegal,Iraq,5,0,
+group,Algeria,Austria,3,3,
+group,Jordan,Argentina,1,3,
+group,Colombia,Portugal,0,0,
+group,DR Congo,Uzbekistan,3,1,
+group,Panama,England,0,2,
+group,Croatia,Ghana,2,1,
+ko,South Africa,Canada,0,1,
+ko,Brazil,Japan,2,1,
+ko,Germany,Paraguay,1,1,Paraguay
+ko,Netherlands,Morocco,1,1,Morocco
