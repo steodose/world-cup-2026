@@ -54,7 +54,7 @@ def build_payload(result):
         members.sort(key=lambda r: (-r["advance"], -r["proj_points"]))
         groups.append({"letter": letter, "teams": members})
 
-    matches = build_matches(teams)
+    matches = build_matches(teams, result.get("ko_matchups"))
 
     return {
         "meta": {
@@ -140,7 +140,7 @@ def write_csv(result, path=None):
 def write_matches_csv(result, path=None):
     """Write per-match win/draw/loss predictions (+ any played score) to CSV."""
     path = path or config.MATCHES_CSV
-    matches = build_matches(result["teams"])
+    matches = build_matches(result["teams"], result.get("ko_matchups"))
     fieldnames = ["match_no", "date", "venue", "stage", "group",
                   "team_a", "team_b", "p_a_win", "p_draw", "p_b_win",
                   "played", "score_a", "score_b"]

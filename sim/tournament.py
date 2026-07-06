@@ -75,6 +75,19 @@ STAGE_NAMES = ["round_of_32", "round_of_16", "quarter_finals",
                "semi_finals", "final", "champion"]
 
 
+# FIFA's official Annex C predefines a specific slot assignment for each set of
+# qualifying thirds. The bipartite solver below honours every hard rule but may
+# pick a different (equally valid) matching than FIFA's published table. Where we
+# have verified FIFA's actual assignment, record it here to override the solver;
+# keyed by the sorted tuple of the 8 groups whose thirds qualify, value maps
+# third-slot index 0..7 -> group letter.
+OFFICIAL_THIRD_ASSIGNMENT = {
+    # 2026 actual qualifiers (verified vs the published bracket): Germany-Paraguay,
+    # France-Sweden, USA-Bosnia, Switzerland-Algeria, etc.
+    ("B", "D", "E", "F", "I", "J", "K", "L"): ("D", "F", "E", "K", "B", "I", "J", "L"),
+}
+
+
 @lru_cache(maxsize=None)
 def _match_thirds(qualifying_groups):
     """Given a sorted tuple of 8 group letters whose thirds qualify, return a
@@ -114,8 +127,13 @@ def _match_thirds(qualifying_groups):
 
 
 def third_slot_assignment(qualifying_groups):
-    """Public wrapper: qualifying_groups is any iterable of 8 group letters."""
-    return _match_thirds(tuple(sorted(qualifying_groups)))
+    """Public wrapper: qualifying_groups is any iterable of 8 group letters.
+    Prefers FIFA's verified official assignment, else solves the constraints."""
+    key = tuple(sorted(qualifying_groups))
+    official = OFFICIAL_THIRD_ASSIGNMENT.get(key)
+    if official is not None:
+        return official
+    return _match_thirds(key)
 
 
 def validate_all_combinations():

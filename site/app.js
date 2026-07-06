@@ -209,7 +209,7 @@ function matchCard(m) {
 
   const card = el("div", "match-card" + (m.played ? " is-played" : ""));
   card.appendChild(row);
-  const tag = m.played ? "FT" : "Group " + m.group;
+  const tag = m.played ? "FT" : (m.stage === "ko" ? m.round : "Group " + m.group);
   card.appendChild(el("div", "m-meta", `${m.venue} · ${tag}`));
   return card;
 }

@@ -16,6 +16,67 @@ from math import factorial
 import numpy as np
 
 from sim import config, model
+from sim.tournament import (ROUND_OF_32, ROUND_OF_16, QUARTER_FINALS,
+                            SEMI_FINALS, FINAL)
+
+# Official 2026 knockout schedule, match number -> (date, venue). Teams are
+# resolved from the bracket (once the group stage is complete), not stored here.
+KO_SCHEDULE = {
+    73: ("2026-06-28", "Inglewood"),
+    74: ("2026-06-29", "Foxborough"),
+    75: ("2026-06-29", "Monterrey"),
+    76: ("2026-06-29", "Houston"),
+    77: ("2026-06-30", "East Rutherford"),
+    78: ("2026-06-30", "Arlington"),
+    79: ("2026-06-30", "Mexico City"),
+    80: ("2026-07-01", "Atlanta"),
+    81: ("2026-07-01", "Santa Clara"),
+    82: ("2026-07-01", "Seattle"),
+    83: ("2026-07-02", "Toronto"),
+    84: ("2026-07-02", "Inglewood"),
+    85: ("2026-07-02", "Vancouver"),
+    86: ("2026-07-03", "Miami Gardens"),
+    87: ("2026-07-03", "Kansas City"),
+    88: ("2026-07-03", "Arlington"),
+    # Round of 16. Matches 89 (W73/W75) and 90 (W74/W77) both feed QF 97; FIFA's
+    # official numbering pairs the venues the opposite way from this tree, so the
+    # Philadelphia tie is match 90 (Paraguay-France) and Houston is match 89.
+    89: ("2026-07-04", "Houston"),
+    90: ("2026-07-04", "Philadelphia"),
+    91: ("2026-07-05", "East Rutherford"),
+    92: ("2026-07-05", "Mexico City"),
+    93: ("2026-07-06", "Arlington"),
+    94: ("2026-07-06", "Seattle"),
+    95: ("2026-07-07", "Atlanta"),
+    96: ("2026-07-07", "Vancouver"),
+    # Quarter-finals
+    97: ("2026-07-09", "Foxborough"),
+    98: ("2026-07-10", "Inglewood"),
+    99: ("2026-07-11", "Miami Gardens"),
+    100: ("2026-07-11", "Kansas City"),
+    # Semi-finals
+    101: ("2026-07-14", "Arlington"),
+    102: ("2026-07-15", "Atlanta"),
+    # Final (match 103 is the third-place play-off, which the sim doesn't model)
+    104: ("2026-07-19", "East Rutherford"),
+}
+
+
+def _round_names():
+    names = {}
+    for m, *_ in ROUND_OF_32:
+        names[m] = "Round of 32"
+    for m, *_ in ROUND_OF_16:
+        names[m] = "Round of 16"
+    for m, *_ in QUARTER_FINALS:
+        names[m] = "Quarter-final"
+    for m, *_ in SEMI_FINALS:
+        names[m] = "Semi-final"
+    names[FINAL[0]] = "Final"
+    return names
+
+
+ROUND_NAMES = _round_names()
 
 
 def _poisson_pmf(lam, kmax):
@@ -54,8 +115,15 @@ def _load_played(name_to_team):
     return played
 
 
-def build_matches(teams):
-    """Return a list of match dicts (predictions + any played result)."""
+def build_matches(teams, ko_matchups=None):
+    """Return a list of match dicts (predictions + any played result).
+
+    Always includes the group-stage fixtures from fixtures.csv. When
+    `ko_matchups` is supplied (a list of (match_no, team_id_a, team_id_b) for
+    every knockout tie whose two participants are already decided by locked
+    results), those ties are appended with the same analytic W/D/L treatment.
+    This grows a round at a time: the Round of 32 once the group stage is
+    complete, the Round of 16 once the R32 is locked, and so on."""
     name_to_team = {t.name: t for t in teams}
     host_bonus = {
         t.name: (config.HOST_HOME_ADVANTAGE if t.name in config.HOST_NATIONS else 0.0)
@@ -63,47 +131,56 @@ def build_matches(teams):
     }
     played = _load_played(name_to_team)
 
-    if not config.FIXTURES_CSV.exists():
-        return []
+    def make_entry(match_no, date, venue, stage, group, round_name, ta, tb):
+        na, nb = ta.name, tb.name
+        diff = ta.composite - tb.composite + host_bonus[na] - host_bonus[nb]
+        lam_a, lam_b = model.expected_goals(diff)
+        p_a, p_draw, p_b = wdl_probs(float(lam_a), float(lam_b))
+        entry = {
+            "match_no": match_no,
+            "date": date,
+            "venue": venue,
+            "stage": stage,
+            "group": group,
+            "round": round_name,
+            "team_a": {"name": na, "logo": ta.logo},
+            "team_b": {"name": nb, "logo": tb.logo},
+            "xg_a": round(float(lam_a), 2),
+            "xg_b": round(float(lam_b), 2),
+            "p_a": round(p_a, 4),
+            "p_draw": round(p_draw, 4),
+            "p_b": round(p_b, 4),
+            "played": False,
+        }
+        lock = played.get(frozenset((na, nb)))
+        if lock is not None:
+            entry["played"] = True
+            entry["score_a"] = lock[na]
+            entry["score_b"] = lock[nb]
+        return entry
 
     matches = []
-    with open(config.FIXTURES_CSV, newline="", encoding="utf-8") as f:
-        for row in csv.DictReader(f):
-            na, nb = row["team_a"].strip(), row["team_b"].strip()
-            ta, tb = name_to_team.get(na), name_to_team.get(nb)
-            if ta is None or tb is None:
-                print(f"  WARNING: fixtures.csv references unknown team(s): "
-                      f"{na!r}/{nb!r}; skipping match {row.get('match_no')}.")
-                continue
 
-            diff = (ta.composite - tb.composite
-                    + host_bonus[na] - host_bonus[nb])
-            lam_a, lam_b = model.expected_goals(diff)
-            p_a, p_draw, p_b = wdl_probs(float(lam_a), float(lam_b))
+    if config.FIXTURES_CSV.exists():
+        with open(config.FIXTURES_CSV, newline="", encoding="utf-8") as f:
+            for row in csv.DictReader(f):
+                na, nb = row["team_a"].strip(), row["team_b"].strip()
+                ta, tb = name_to_team.get(na), name_to_team.get(nb)
+                if ta is None or tb is None:
+                    print(f"  WARNING: fixtures.csv references unknown team(s): "
+                          f"{na!r}/{nb!r}; skipping match {row.get('match_no')}.")
+                    continue
+                matches.append(make_entry(
+                    int(row["match_no"]), row["date"].strip(), row["venue"].strip(),
+                    row.get("stage", "group").strip(), row.get("group", "").strip(),
+                    "", ta, tb))
 
-            entry = {
-                "match_no": int(row["match_no"]),
-                "date": row["date"].strip(),
-                "venue": row["venue"].strip(),
-                "stage": row.get("stage", "group").strip(),
-                "group": row.get("group", "").strip(),
-                "team_a": {"name": na, "logo": ta.logo},
-                "team_b": {"name": nb, "logo": tb.logo},
-                "xg_a": round(float(lam_a), 2),
-                "xg_b": round(float(lam_b), 2),
-                "p_a": round(p_a, 4),
-                "p_draw": round(p_draw, 4),
-                "p_b": round(p_b, 4),
-                "played": False,
-            }
-
-            lock = played.get(frozenset((na, nb)))
-            if lock is not None:
-                entry["played"] = True
-                entry["score_a"] = lock[na]
-                entry["score_b"] = lock[nb]
-
-            matches.append(entry)
+    if ko_matchups:
+        for match_no, ia, ib in ko_matchups:
+            date, venue = KO_SCHEDULE.get(match_no, ("", ""))
+            matches.append(make_entry(
+                match_no, date, venue, "ko", "",
+                ROUND_NAMES.get(match_no, "Knockout"), teams[ia], teams[ib]))
 
     matches.sort(key=lambda m: (m["date"], m["match_no"]))
     return matches

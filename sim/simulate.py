@@ -252,9 +252,11 @@ def run(n_sims=None, seed=None, verbose=True):
         return winner
 
     winners = {}   # match_number -> winner ids (N,)
+    r32_pairs = []  # (match_number, id_a array, id_b array)
 
     for m, slot_a, slot_b in ROUND_OF_32:
         id_a, id_b = resolve_slot(slot_a), resolve_slot(slot_b)
+        r32_pairs.append((m, id_a, id_b))
         np.add.at(reach["round_of_32"], id_a, 1)
         np.add.at(reach["round_of_32"], id_b, 1)
         w = play_ko(id_a, id_b)
@@ -276,6 +278,26 @@ def run(n_sims=None, seed=None, verbose=True):
     winners[m] = champ
     np.add.at(reach["champion"], champ, 1)
 
+    # Once every group match is locked, the bracket is deterministic (identical
+    # across all sims), so sim 0 gives the concrete Round-of-32 matchups.
+    group_complete = len(group_locks) == 6 * len(GROUP_LETTERS)
+
+    # Every knockout tie whose two participants are already decided can be shown
+    # on the Matches tab as a concrete fixture. A tie is decided when both its
+    # feeder winners are identical across every sim (i.e. the feeders are locked
+    # results). This unlocks one round at a time: the Round of 32 once the group
+    # stage is complete, the Round of 16 once the R32 is locked, and so on.
+    def _decided(arr):
+        return bool((arr == arr[0]).all())
+
+    ko_matchups = []
+    if group_complete:
+        ko_matchups.extend((m, int(a[0]), int(b[0])) for m, a, b in r32_pairs)
+    for m, fa, fb in (*ROUND_OF_16, *QUARTER_FINALS, *SEMI_FINALS, FINAL):
+        wa, wb = winners[fa], winners[fb]
+        if _decided(wa) and _decided(wb):
+            ko_matchups.append((m, int(wa[0]), int(wb[0])))
+
     return {
         "teams": teams,
         "n_sims": N,
@@ -284,6 +306,7 @@ def run(n_sims=None, seed=None, verbose=True):
         "reach": reach,
         "group_locks": group_locks,
         "ko_locks": ko_locks,
+        "ko_matchups": ko_matchups,
     }
 
 
