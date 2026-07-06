@@ -1,9 +1,9 @@
 {
  "meta": {
-  "generated": "2026-07-06 00:03 UTC",
+  "generated": "2026-07-06 04:37 UTC",
   "n_sims": 50000,
   "locked_group_matches": 72,
-  "locked_ko_matches": 18,
+  "locked_ko_matches": 20,
   "sources": [
    "elo",
    "kuleuven",
@@ -32,10 +32,10 @@
      "advance": 1.0,
      "round_of_32": 1.0,
      "round_of_16": 1.0,
-     "quarter_finals": 0.41174,
-     "semi_finals": 0.19274,
-     "final": 0.08408,
-     "champion": 0.03592,
+     "quarter_finals": 0.0,
+     "semi_finals": 0.0,
+     "final": 0.0,
+     "champion": 0.0,
      "rank": 18
     },
     {
@@ -134,9 +134,9 @@
      "round_of_32": 1.0,
      "round_of_16": 1.0,
      "quarter_finals": 0.42732,
-     "semi_finals": 0.16474,
-     "final": 0.06862,
-     "champion": 0.02602,
+     "semi_finals": 0.16582,
+     "final": 0.07078,
+     "champion": 0.02824,
      "rank": 17
     },
     {
@@ -234,10 +234,10 @@
      "advance": 1.0,
      "round_of_32": 1.0,
      "round_of_16": 1.0,
-     "quarter_finals": 0.59112,
-     "semi_finals": 0.3026,
-     "final": 0.15166,
-     "champion": 0.07384,
+     "quarter_finals": 0.0,
+     "semi_finals": 0.0,
+     "final": 0.0,
+     "champion": 0.0,
      "rank": 5
     },
     {
@@ -260,8 +260,8 @@
      "round_of_16": 1.0,
      "quarter_finals": 1.0,
      "semi_finals": 0.3154,
-     "final": 0.10982,
-     "champion": 0.0399,
+     "final": 0.1116,
+     "champion": 0.0412,
      "rank": 20
     },
     {
@@ -337,8 +337,8 @@
      "round_of_16": 1.0,
      "quarter_finals": 0.46286,
      "semi_finals": 0.15294,
-     "final": 0.06088,
-     "champion": 0.02184,
+     "final": 0.0603,
+     "champion": 0.02216,
      "rank": 23
     },
     {
@@ -640,8 +640,8 @@
      "round_of_16": 1.0,
      "quarter_finals": 0.53714,
      "semi_finals": 0.19212,
-     "final": 0.08286,
-     "champion": 0.034,
+     "final": 0.08172,
+     "champion": 0.03468,
      "rank": 15
     },
     {
@@ -663,9 +663,9 @@
      "round_of_32": 1.0,
      "round_of_16": 1.0,
      "quarter_finals": 0.21078,
-     "semi_finals": 0.06912,
-     "final": 0.02098,
-     "champion": 0.00564,
+     "semi_finals": 0.06936,
+     "final": 0.02108,
+     "champion": 0.0054,
      "rank": 34
     },
     {
@@ -741,8 +741,8 @@
      "round_of_16": 1.0,
      "quarter_finals": 0.61876,
      "semi_finals": 0.43068,
-     "final": 0.26276,
-     "champion": 0.15766,
+     "final": 0.26374,
+     "champion": 0.15774,
      "rank": 1
     },
     {
@@ -842,8 +842,8 @@
      "round_of_16": 1.0,
      "quarter_finals": 1.0,
      "semi_finals": 0.6846,
-     "final": 0.37214,
-     "champion": 0.20576,
+     "final": 0.3724,
+     "champion": 0.2038,
      "rank": 3
     },
     {
@@ -864,10 +864,10 @@
      "advance": 1.0,
      "round_of_32": 1.0,
      "round_of_16": 1.0,
-     "quarter_finals": 0.40888,
-     "semi_finals": 0.17396,
-     "final": 0.07218,
-     "champion": 0.02908,
+     "quarter_finals": 1.0,
+     "semi_finals": 0.3928,
+     "final": 0.16224,
+     "champion": 0.0642,
      "rank": 14
     },
     {
@@ -942,9 +942,9 @@
      "round_of_32": 1.0,
      "round_of_16": 1.0,
      "quarter_finals": 0.78922,
-     "semi_finals": 0.50916,
-     "final": 0.30786,
-     "champion": 0.17566,
+     "semi_finals": 0.50892,
+     "final": 0.30958,
+     "champion": 0.17562,
      "rank": 2
     },
     {
@@ -1043,9 +1043,9 @@
      "round_of_32": 1.0,
      "round_of_16": 1.0,
      "quarter_finals": 0.57268,
-     "semi_finals": 0.25698,
-     "final": 0.1258,
-     "champion": 0.05602,
+     "semi_finals": 0.2559,
+     "final": 0.12498,
+     "champion": 0.05698,
      "rank": 8
     },
     {
@@ -1068,8 +1068,8 @@
      "round_of_16": 1.0,
      "quarter_finals": 0.38124,
      "semi_finals": 0.22426,
-     "final": 0.11154,
-     "champion": 0.05462,
+     "final": 0.11024,
+     "champion": 0.0521,
      "rank": 6
     },
     {
@@ -1143,10 +1143,10 @@
      "advance": 1.0,
      "round_of_32": 1.0,
      "round_of_16": 1.0,
-     "quarter_finals": 0.58826,
-     "semi_finals": 0.3307,
-     "final": 0.16882,
-     "champion": 0.08404,
+     "quarter_finals": 1.0,
+     "semi_finals": 0.6072,
+     "final": 0.31134,
+     "champion": 0.15788,
      "rank": 4
     },
     {
@@ -1245,8 +1245,8 @@
    "round_of_16": 1.0,
    "quarter_finals": 1.0,
    "semi_finals": 0.6846,
-   "final": 0.37214,
-   "champion": 0.20576,
+   "final": 0.3724,
+   "champion": 0.2038,
    "rank": 3
   },
   {
@@ -1268,10 +1268,34 @@
    "round_of_32": 1.0,
    "round_of_16": 1.0,
    "quarter_finals": 0.78922,
-   "semi_finals": 0.50916,
-   "final": 0.30786,
-   "champion": 0.17566,
+   "semi_finals": 0.50892,
+   "final": 0.30958,
+   "champion": 0.17562,
    "rank": 2
+  },
+  {
+   "name": "England",
+   "group": "L",
+   "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/eng.png",
+   "rating": 1720,
+   "sources": {
+    "elo": 2020.0,
+    "kuleuven": 1886.0,
+    "silver": 2027.0
+   },
+   "proj_points": 7.0,
+   "win_group": 1.0,
+   "runner_up": 0.0,
+   "third": 0.0,
+   "fourth": 0.0,
+   "advance": 1.0,
+   "round_of_32": 1.0,
+   "round_of_16": 1.0,
+   "quarter_finals": 1.0,
+   "semi_finals": 0.6072,
+   "final": 0.31134,
+   "champion": 0.15788,
+   "rank": 4
   },
   {
    "name": "Spain",
@@ -1293,57 +1317,33 @@
    "round_of_16": 1.0,
    "quarter_finals": 0.61876,
    "semi_finals": 0.43068,
-   "final": 0.26276,
-   "champion": 0.15766,
+   "final": 0.26374,
+   "champion": 0.15774,
    "rank": 1
   },
   {
-   "name": "England",
-   "group": "L",
-   "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/eng.png",
-   "rating": 1720,
+   "name": "Norway",
+   "group": "I",
+   "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/nor.png",
+   "rating": 1599,
    "sources": {
-    "elo": 2020.0,
-    "kuleuven": 1886.0,
-    "silver": 2027.0
+    "elo": 1917.0,
+    "kuleuven": 1747.0,
+    "silver": 1953.0
    },
-   "proj_points": 7.0,
-   "win_group": 1.0,
-   "runner_up": 0.0,
+   "proj_points": 6.0,
+   "win_group": 0.0,
+   "runner_up": 1.0,
    "third": 0.0,
    "fourth": 0.0,
    "advance": 1.0,
    "round_of_32": 1.0,
    "round_of_16": 1.0,
-   "quarter_finals": 0.58826,
-   "semi_finals": 0.3307,
-   "final": 0.16882,
-   "champion": 0.08404,
-   "rank": 4
-  },
-  {
-   "name": "Brazil",
-   "group": "C",
-   "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/bra.png",
-   "rating": 1697,
-   "sources": {
-    "elo": 1988.0,
-    "kuleuven": 1886.0,
-    "silver": 1989.0
-   },
-   "proj_points": 7.0,
-   "win_group": 1.0,
-   "runner_up": 0.0,
-   "third": 0.0,
-   "fourth": 0.0,
-   "advance": 1.0,
-   "round_of_32": 1.0,
-   "round_of_16": 1.0,
-   "quarter_finals": 0.59112,
-   "semi_finals": 0.3026,
-   "final": 0.15166,
-   "champion": 0.07384,
-   "rank": 5
+   "quarter_finals": 1.0,
+   "semi_finals": 0.3928,
+   "final": 0.16224,
+   "champion": 0.0642,
+   "rank": 14
   },
   {
    "name": "Colombia",
@@ -1364,9 +1364,9 @@
    "round_of_32": 1.0,
    "round_of_16": 1.0,
    "quarter_finals": 0.57268,
-   "semi_finals": 0.25698,
-   "final": 0.1258,
-   "champion": 0.05602,
+   "semi_finals": 0.2559,
+   "final": 0.12498,
+   "champion": 0.05698,
    "rank": 8
   },
   {
@@ -1389,8 +1389,8 @@
    "round_of_16": 1.0,
    "quarter_finals": 0.38124,
    "semi_finals": 0.22426,
-   "final": 0.11154,
-   "champion": 0.05462,
+   "final": 0.11024,
+   "champion": 0.0521,
    "rank": 6
   },
   {
@@ -1413,33 +1413,9 @@
    "round_of_16": 1.0,
    "quarter_finals": 1.0,
    "semi_finals": 0.3154,
-   "final": 0.10982,
-   "champion": 0.0399,
+   "final": 0.1116,
+   "champion": 0.0412,
    "rank": 20
-  },
-  {
-   "name": "Mexico",
-   "group": "A",
-   "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/mex.png",
-   "rating": 1571,
-   "sources": {
-    "elo": 1868.0,
-    "kuleuven": 1800.0,
-    "silver": 1853.0
-   },
-   "proj_points": 9.0,
-   "win_group": 1.0,
-   "runner_up": 0.0,
-   "third": 0.0,
-   "fourth": 0.0,
-   "advance": 1.0,
-   "round_of_32": 1.0,
-   "round_of_16": 1.0,
-   "quarter_finals": 0.41174,
-   "semi_finals": 0.19274,
-   "final": 0.08408,
-   "champion": 0.03592,
-   "rank": 18
   },
   {
    "name": "Belgium",
@@ -1461,33 +1437,9 @@
    "round_of_16": 1.0,
    "quarter_finals": 0.53714,
    "semi_finals": 0.19212,
-   "final": 0.08286,
-   "champion": 0.034,
+   "final": 0.08172,
+   "champion": 0.03468,
    "rank": 15
-  },
-  {
-   "name": "Norway",
-   "group": "I",
-   "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/nor.png",
-   "rating": 1599,
-   "sources": {
-    "elo": 1917.0,
-    "kuleuven": 1747.0,
-    "silver": 1953.0
-   },
-   "proj_points": 6.0,
-   "win_group": 0.0,
-   "runner_up": 1.0,
-   "third": 0.0,
-   "fourth": 0.0,
-   "advance": 1.0,
-   "round_of_32": 1.0,
-   "round_of_16": 1.0,
-   "quarter_finals": 0.40888,
-   "semi_finals": 0.17396,
-   "final": 0.07218,
-   "champion": 0.02908,
-   "rank": 14
   },
   {
    "name": "Switzerland",
@@ -1508,9 +1460,9 @@
    "round_of_32": 1.0,
    "round_of_16": 1.0,
    "quarter_finals": 0.42732,
-   "semi_finals": 0.16474,
-   "final": 0.06862,
-   "champion": 0.02602,
+   "semi_finals": 0.16582,
+   "final": 0.07078,
+   "champion": 0.02824,
    "rank": 17
   },
   {
@@ -1533,8 +1485,8 @@
    "round_of_16": 1.0,
    "quarter_finals": 0.46286,
    "semi_finals": 0.15294,
-   "final": 0.06088,
-   "champion": 0.02184,
+   "final": 0.0603,
+   "champion": 0.02216,
    "rank": 23
   },
   {
@@ -1556,10 +1508,34 @@
    "round_of_32": 1.0,
    "round_of_16": 1.0,
    "quarter_finals": 0.21078,
-   "semi_finals": 0.06912,
-   "final": 0.02098,
-   "champion": 0.00564,
+   "semi_finals": 0.06936,
+   "final": 0.02108,
+   "champion": 0.0054,
    "rank": 34
+  },
+  {
+   "name": "Mexico",
+   "group": "A",
+   "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/mex.png",
+   "rating": 1571,
+   "sources": {
+    "elo": 1868.0,
+    "kuleuven": 1800.0,
+    "silver": 1853.0
+   },
+   "proj_points": 9.0,
+   "win_group": 1.0,
+   "runner_up": 0.0,
+   "third": 0.0,
+   "fourth": 0.0,
+   "advance": 1.0,
+   "round_of_32": 1.0,
+   "round_of_16": 1.0,
+   "quarter_finals": 0.0,
+   "semi_finals": 0.0,
+   "final": 0.0,
+   "champion": 0.0,
+   "rank": 18
   },
   {
    "name": "South Korea",
@@ -1704,6 +1680,30 @@
    "final": 0.0,
    "champion": 0.0,
    "rank": 38
+  },
+  {
+   "name": "Brazil",
+   "group": "C",
+   "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/bra.png",
+   "rating": 1697,
+   "sources": {
+    "elo": 1988.0,
+    "kuleuven": 1886.0,
+    "silver": 1989.0
+   },
+   "proj_points": 7.0,
+   "win_group": 1.0,
+   "runner_up": 0.0,
+   "third": 0.0,
+   "fourth": 0.0,
+   "advance": 1.0,
+   "round_of_32": 1.0,
+   "round_of_16": 1.0,
+   "quarter_finals": 0.0,
+   "semi_finals": 0.0,
+   "final": 0.0,
+   "champion": 0.0,
+   "rank": 5
   },
   {
    "name": "Scotland",
@@ -4559,7 +4559,9 @@
    "p_a": 0.4366,
    "p_draw": 0.2553,
    "p_b": 0.3081,
-   "played": false
+   "played": true,
+   "score_a": 1,
+   "score_b": 2
   },
   {
    "match_no": 92,
@@ -4581,7 +4583,9 @@
    "p_a": 0.3071,
    "p_draw": 0.2552,
    "p_b": 0.4377,
-   "played": false
+   "played": true,
+   "score_a": 2,
+   "score_b": 3
   },
   {
    "match_no": 93,
@@ -4691,6 +4695,28 @@
    "p_a": 0.2358,
    "p_draw": 0.2437,
    "p_b": 0.5206,
+   "played": false
+  },
+  {
+   "match_no": 99,
+   "date": "2026-07-11",
+   "venue": "Miami Gardens",
+   "stage": "ko",
+   "group": "",
+   "round": "Quarter-final",
+   "team_a": {
+    "name": "Norway",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/nor.png"
+   },
+   "team_b": {
+    "name": "England",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/eng.png"
+   },
+   "xg_a": 1.18,
+   "xg_b": 1.52,
+   "p_a": 0.2938,
+   "p_draw": 0.2537,
+   "p_b": 0.4524,
    "played": false
   }
  ]
