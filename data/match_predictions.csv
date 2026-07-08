@@ -93,8 +93,9 @@ match_no,date,venue,stage,group,team_a,team_b,p_a_win,p_draw,p_b_win,played,scor
 92,2026-07-05,Mexico City,ko,,Mexico,England,0.3071,0.2552,0.4377,1,2,3
 93,2026-07-06,Arlington,ko,,Portugal,Spain,0.2873,0.2529,0.4598,1,0,1
 94,2026-07-06,Seattle,ko,,USA,Belgium,0.347,0.2578,0.3952,1,1,4
-95,2026-07-07,Atlanta,ko,,Argentina,Egypt,0.6255,0.2178,0.1566,0,,
-96,2026-07-07,Vancouver,ko,,Switzerland,Colombia,0.3206,0.2563,0.4231,0,,
+95,2026-07-07,Atlanta,ko,,Argentina,Egypt,0.6255,0.2178,0.1566,1,3,2
+96,2026-07-07,Vancouver,ko,,Switzerland,Colombia,0.3206,0.2563,0.4231,1,0,0
 97,2026-07-09,Foxborough,ko,,Morocco,France,0.2358,0.2437,0.5206,0,,
 98,2026-07-10,Inglewood,ko,,Spain,Belgium,0.5192,0.2439,0.2369,0,,
 99,2026-07-11,Miami Gardens,ko,,Norway,England,0.2938,0.2537,0.4524,0,,
+100,2026-07-11,Kansas City,ko,,Argentina,Switzerland,0.514,0.2449,0.2412,0,,
