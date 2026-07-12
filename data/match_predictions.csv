@@ -97,6 +97,7 @@ match_no,date,venue,stage,group,team_a,team_b,p_a_win,p_draw,p_b_win,played,scor
 96,2026-07-07,Vancouver,ko,,Switzerland,Colombia,0.3206,0.2563,0.4231,1,0,0
 97,2026-07-09,Foxborough,ko,,Morocco,France,0.2358,0.2437,0.5206,1,0,2
 98,2026-07-10,Inglewood,ko,,Spain,Belgium,0.5192,0.2439,0.2369,1,2,1
-99,2026-07-11,Miami Gardens,ko,,Norway,England,0.2938,0.2537,0.4524,0,,
-100,2026-07-11,Kansas City,ko,,Argentina,Switzerland,0.514,0.2449,0.2412,0,,
+99,2026-07-11,Miami Gardens,ko,,Norway,England,0.2938,0.2537,0.4524,1,1,2
+100,2026-07-11,Kansas City,ko,,Argentina,Switzerland,0.514,0.2449,0.2412,1,3,1
 101,2026-07-14,Arlington,ko,,France,Spain,0.3335,0.2572,0.4093,0,,
+102,2026-07-15,Atlanta,ko,,England,Argentina,0.3238,0.2566,0.4197,0,,

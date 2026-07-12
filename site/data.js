@@ -1,9 +1,9 @@
 window.WC_DATA = {
  "meta": {
-  "generated": "2026-07-10 21:05 UTC",
+  "generated": "2026-07-12 17:14 UTC",
   "n_sims": 50000,
   "locked_group_matches": 72,
-  "locked_ko_matches": 26,
+  "locked_ko_matches": 28,
   "sources": [
    "elo",
    "kuleuven",
@@ -134,9 +134,9 @@ window.WC_DATA = {
      "round_of_32": 1.0,
      "round_of_16": 1.0,
      "quarter_finals": 1.0,
-     "semi_finals": 0.319,
-     "final": 0.13474,
-     "champion": 0.04274,
+     "semi_finals": 0.0,
+     "final": 0.0,
+     "champion": 0.0,
      "rank": 17
     },
     {
@@ -742,7 +742,7 @@ window.WC_DATA = {
      "quarter_finals": 1.0,
      "semi_finals": 1.0,
      "final": 0.55688,
-     "champion": 0.32674,
+     "champion": 0.30282,
      "rank": 1
     },
     {
@@ -843,7 +843,7 @@ window.WC_DATA = {
      "quarter_finals": 1.0,
      "semi_finals": 1.0,
      "final": 0.44312,
-     "champion": 0.23872,
+     "champion": 0.22038,
      "rank": 3
     },
     {
@@ -865,9 +865,9 @@ window.WC_DATA = {
      "round_of_32": 1.0,
      "round_of_16": 1.0,
      "quarter_finals": 1.0,
-     "semi_finals": 0.38932,
-     "final": 0.15138,
-     "champion": 0.05094,
+     "semi_finals": 0.0,
+     "final": 0.0,
+     "champion": 0.0,
      "rank": 14
     },
     {
@@ -942,9 +942,9 @@ window.WC_DATA = {
      "round_of_32": 1.0,
      "round_of_16": 1.0,
      "quarter_finals": 1.0,
-     "semi_finals": 0.681,
-     "final": 0.4126,
-     "champion": 0.20884,
+     "semi_finals": 1.0,
+     "final": 0.56564,
+     "champion": 0.28564,
      "rank": 2
     },
     {
@@ -1144,9 +1144,9 @@ window.WC_DATA = {
      "round_of_32": 1.0,
      "round_of_16": 1.0,
      "quarter_finals": 1.0,
-     "semi_finals": 0.61068,
-     "final": 0.30128,
-     "champion": 0.13202,
+     "semi_finals": 1.0,
+     "final": 0.43436,
+     "champion": 0.19116,
      "rank": 4
     },
     {
@@ -1246,8 +1246,32 @@ window.WC_DATA = {
    "quarter_finals": 1.0,
    "semi_finals": 1.0,
    "final": 0.55688,
-   "champion": 0.32674,
+   "champion": 0.30282,
    "rank": 1
+  },
+  {
+   "name": "Argentina",
+   "group": "J",
+   "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/arg.png",
+   "rating": 1793,
+   "sources": {
+    "elo": 2113.0,
+    "kuleuven": 1965.0,
+    "silver": 2065.0
+   },
+   "proj_points": 9.0,
+   "win_group": 1.0,
+   "runner_up": 0.0,
+   "third": 0.0,
+   "fourth": 0.0,
+   "advance": 1.0,
+   "round_of_32": 1.0,
+   "round_of_16": 1.0,
+   "quarter_finals": 1.0,
+   "semi_finals": 1.0,
+   "final": 0.56564,
+   "champion": 0.28564,
+   "rank": 2
   },
   {
    "name": "France",
@@ -1270,32 +1294,8 @@ window.WC_DATA = {
    "quarter_finals": 1.0,
    "semi_finals": 1.0,
    "final": 0.44312,
-   "champion": 0.23872,
+   "champion": 0.22038,
    "rank": 3
-  },
-  {
-   "name": "Argentina",
-   "group": "J",
-   "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/arg.png",
-   "rating": 1793,
-   "sources": {
-    "elo": 2113.0,
-    "kuleuven": 1965.0,
-    "silver": 2065.0
-   },
-   "proj_points": 9.0,
-   "win_group": 1.0,
-   "runner_up": 0.0,
-   "third": 0.0,
-   "fourth": 0.0,
-   "advance": 1.0,
-   "round_of_32": 1.0,
-   "round_of_16": 1.0,
-   "quarter_finals": 1.0,
-   "semi_finals": 0.681,
-   "final": 0.4126,
-   "champion": 0.20884,
-   "rank": 2
   },
   {
    "name": "England",
@@ -1316,58 +1316,10 @@ window.WC_DATA = {
    "round_of_32": 1.0,
    "round_of_16": 1.0,
    "quarter_finals": 1.0,
-   "semi_finals": 0.61068,
-   "final": 0.30128,
-   "champion": 0.13202,
+   "semi_finals": 1.0,
+   "final": 0.43436,
+   "champion": 0.19116,
    "rank": 4
-  },
-  {
-   "name": "Norway",
-   "group": "I",
-   "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/nor.png",
-   "rating": 1599,
-   "sources": {
-    "elo": 1917.0,
-    "kuleuven": 1747.0,
-    "silver": 1953.0
-   },
-   "proj_points": 6.0,
-   "win_group": 0.0,
-   "runner_up": 1.0,
-   "third": 0.0,
-   "fourth": 0.0,
-   "advance": 1.0,
-   "round_of_32": 1.0,
-   "round_of_16": 1.0,
-   "quarter_finals": 1.0,
-   "semi_finals": 0.38932,
-   "final": 0.15138,
-   "champion": 0.05094,
-   "rank": 14
-  },
-  {
-   "name": "Switzerland",
-   "group": "B",
-   "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/swi.png",
-   "rating": 1583,
-   "sources": {
-    "elo": 1894.0,
-    "kuleuven": 1782.0,
-    "silver": 1889.0
-   },
-   "proj_points": 7.0,
-   "win_group": 1.0,
-   "runner_up": 0.0,
-   "third": 0.0,
-   "fourth": 0.0,
-   "advance": 1.0,
-   "round_of_32": 1.0,
-   "round_of_16": 1.0,
-   "quarter_finals": 1.0,
-   "semi_finals": 0.319,
-   "final": 0.13474,
-   "champion": 0.04274,
-   "rank": 17
   },
   {
    "name": "Mexico",
@@ -1488,6 +1440,30 @@ window.WC_DATA = {
    "final": 0.0,
    "champion": 0.0,
    "rank": 24
+  },
+  {
+   "name": "Switzerland",
+   "group": "B",
+   "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/swi.png",
+   "rating": 1583,
+   "sources": {
+    "elo": 1894.0,
+    "kuleuven": 1782.0,
+    "silver": 1889.0
+   },
+   "proj_points": 7.0,
+   "win_group": 1.0,
+   "runner_up": 0.0,
+   "third": 0.0,
+   "fourth": 0.0,
+   "advance": 1.0,
+   "round_of_32": 1.0,
+   "round_of_16": 1.0,
+   "quarter_finals": 1.0,
+   "semi_finals": 0.0,
+   "final": 0.0,
+   "champion": 0.0,
+   "rank": 17
   },
   {
    "name": "Qatar",
@@ -2112,6 +2088,30 @@ window.WC_DATA = {
    "final": 0.0,
    "champion": 0.0,
    "rank": 19
+  },
+  {
+   "name": "Norway",
+   "group": "I",
+   "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/nor.png",
+   "rating": 1599,
+   "sources": {
+    "elo": 1917.0,
+    "kuleuven": 1747.0,
+    "silver": 1953.0
+   },
+   "proj_points": 6.0,
+   "win_group": 0.0,
+   "runner_up": 1.0,
+   "third": 0.0,
+   "fourth": 0.0,
+   "advance": 1.0,
+   "round_of_32": 1.0,
+   "round_of_16": 1.0,
+   "quarter_finals": 1.0,
+   "semi_finals": 0.0,
+   "final": 0.0,
+   "champion": 0.0,
+   "rank": 14
   },
   {
    "name": "Iraq",
@@ -4751,7 +4751,9 @@ window.WC_DATA = {
    "p_a": 0.2938,
    "p_draw": 0.2537,
    "p_b": 0.4524,
-   "played": false
+   "played": true,
+   "score_a": 1,
+   "score_b": 2
   },
   {
    "match_no": 100,
@@ -4773,7 +4775,9 @@ window.WC_DATA = {
    "p_a": 0.514,
    "p_draw": 0.2449,
    "p_b": 0.2412,
-   "played": false
+   "played": true,
+   "score_a": 3,
+   "score_b": 1
   },
   {
    "match_no": 101,
@@ -4795,6 +4799,28 @@ window.WC_DATA = {
    "p_a": 0.3335,
    "p_draw": 0.2572,
    "p_b": 0.4093,
+   "played": false
+  },
+  {
+   "match_no": 102,
+   "date": "2026-07-15",
+   "venue": "Atlanta",
+   "stage": "ko",
+   "group": "",
+   "round": "Semi-final",
+   "team_a": {
+    "name": "England",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/eng.png"
+   },
+   "team_b": {
+    "name": "Argentina",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/arg.png"
+   },
+   "xg_a": 1.25,
+   "xg_b": 1.45,
+   "p_a": 0.3238,
+   "p_draw": 0.2566,
+   "p_b": 0.4197,
    "played": false
   }
  ]
