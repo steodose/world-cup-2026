@@ -1,9 +1,9 @@
 {
  "meta": {
-  "generated": "2026-07-12 17:14 UTC",
+  "generated": "2026-07-15 01:30 UTC",
   "n_sims": 50000,
   "locked_group_matches": 72,
-  "locked_ko_matches": 28,
+  "locked_ko_matches": 29,
   "sources": [
    "elo",
    "kuleuven",
@@ -741,8 +741,8 @@
      "round_of_16": 1.0,
      "quarter_finals": 1.0,
      "semi_finals": 1.0,
-     "final": 0.55688,
-     "champion": 0.30282,
+     "final": 1.0,
+     "champion": 0.54582,
      "rank": 1
     },
     {
@@ -842,8 +842,8 @@
      "round_of_16": 1.0,
      "quarter_finals": 1.0,
      "semi_finals": 1.0,
-     "final": 0.44312,
-     "champion": 0.22038,
+     "final": 0.0,
+     "champion": 0.0,
      "rank": 3
     },
     {
@@ -944,7 +944,7 @@
      "quarter_finals": 1.0,
      "semi_finals": 1.0,
      "final": 0.56564,
-     "champion": 0.28564,
+     "champion": 0.2749,
      "rank": 2
     },
     {
@@ -1146,7 +1146,7 @@
      "quarter_finals": 1.0,
      "semi_finals": 1.0,
      "final": 0.43436,
-     "champion": 0.19116,
+     "champion": 0.17928,
      "rank": 4
     },
     {
@@ -1245,8 +1245,8 @@
    "round_of_16": 1.0,
    "quarter_finals": 1.0,
    "semi_finals": 1.0,
-   "final": 0.55688,
-   "champion": 0.30282,
+   "final": 1.0,
+   "champion": 0.54582,
    "rank": 1
   },
   {
@@ -1270,32 +1270,8 @@
    "quarter_finals": 1.0,
    "semi_finals": 1.0,
    "final": 0.56564,
-   "champion": 0.28564,
+   "champion": 0.2749,
    "rank": 2
-  },
-  {
-   "name": "France",
-   "group": "I",
-   "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/fra.png",
-   "rating": 1757,
-   "sources": {
-    "elo": 2081.0,
-    "kuleuven": 1940.0,
-    "silver": 2026.0
-   },
-   "proj_points": 9.0,
-   "win_group": 1.0,
-   "runner_up": 0.0,
-   "third": 0.0,
-   "fourth": 0.0,
-   "advance": 1.0,
-   "round_of_32": 1.0,
-   "round_of_16": 1.0,
-   "quarter_finals": 1.0,
-   "semi_finals": 1.0,
-   "final": 0.44312,
-   "champion": 0.22038,
-   "rank": 3
   },
   {
    "name": "England",
@@ -1318,7 +1294,7 @@
    "quarter_finals": 1.0,
    "semi_finals": 1.0,
    "final": 0.43436,
-   "champion": 0.19116,
+   "champion": 0.17928,
    "rank": 4
   },
   {
@@ -2064,6 +2040,30 @@
    "final": 0.0,
    "champion": 0.0,
    "rank": 46
+  },
+  {
+   "name": "France",
+   "group": "I",
+   "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/fra.png",
+   "rating": 1757,
+   "sources": {
+    "elo": 2081.0,
+    "kuleuven": 1940.0,
+    "silver": 2026.0
+   },
+   "proj_points": 9.0,
+   "win_group": 1.0,
+   "runner_up": 0.0,
+   "third": 0.0,
+   "fourth": 0.0,
+   "advance": 1.0,
+   "round_of_32": 1.0,
+   "round_of_16": 1.0,
+   "quarter_finals": 1.0,
+   "semi_finals": 1.0,
+   "final": 0.0,
+   "champion": 0.0,
+   "rank": 3
   },
   {
    "name": "Senegal",
@@ -4799,7 +4799,9 @@
    "p_a": 0.3335,
    "p_draw": 0.2572,
    "p_b": 0.4093,
-   "played": false
+   "played": true,
+   "score_a": 0,
+   "score_b": 2
   },
   {
    "match_no": 102,
