@@ -1,9 +1,9 @@
 window.WC_DATA = {
  "meta": {
-  "generated": "2026-07-15 01:30 UTC",
+  "generated": "2026-07-16 02:37 UTC",
   "n_sims": 50000,
   "locked_group_matches": 72,
-  "locked_ko_matches": 29,
+  "locked_ko_matches": 30,
   "sources": [
    "elo",
    "kuleuven",
@@ -742,7 +742,7 @@ window.WC_DATA = {
      "quarter_finals": 1.0,
      "semi_finals": 1.0,
      "final": 1.0,
-     "champion": 0.54582,
+     "champion": 0.52032,
      "rank": 1
     },
     {
@@ -943,8 +943,8 @@ window.WC_DATA = {
      "round_of_16": 1.0,
      "quarter_finals": 1.0,
      "semi_finals": 1.0,
-     "final": 0.56564,
-     "champion": 0.2749,
+     "final": 1.0,
+     "champion": 0.47968,
      "rank": 2
     },
     {
@@ -1145,8 +1145,8 @@ window.WC_DATA = {
      "round_of_16": 1.0,
      "quarter_finals": 1.0,
      "semi_finals": 1.0,
-     "final": 0.43436,
-     "champion": 0.17928,
+     "final": 0.0,
+     "champion": 0.0,
      "rank": 4
     },
     {
@@ -1246,7 +1246,7 @@ window.WC_DATA = {
    "quarter_finals": 1.0,
    "semi_finals": 1.0,
    "final": 1.0,
-   "champion": 0.54582,
+   "champion": 0.52032,
    "rank": 1
   },
   {
@@ -1269,33 +1269,9 @@ window.WC_DATA = {
    "round_of_16": 1.0,
    "quarter_finals": 1.0,
    "semi_finals": 1.0,
-   "final": 0.56564,
-   "champion": 0.2749,
+   "final": 1.0,
+   "champion": 0.47968,
    "rank": 2
-  },
-  {
-   "name": "England",
-   "group": "L",
-   "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/eng.png",
-   "rating": 1720,
-   "sources": {
-    "elo": 2020.0,
-    "kuleuven": 1886.0,
-    "silver": 2027.0
-   },
-   "proj_points": 7.0,
-   "win_group": 1.0,
-   "runner_up": 0.0,
-   "third": 0.0,
-   "fourth": 0.0,
-   "advance": 1.0,
-   "round_of_32": 1.0,
-   "round_of_16": 1.0,
-   "quarter_finals": 1.0,
-   "semi_finals": 1.0,
-   "final": 0.43436,
-   "champion": 0.17928,
-   "rank": 4
   },
   {
    "name": "Mexico",
@@ -2304,6 +2280,30 @@ window.WC_DATA = {
    "final": 0.0,
    "champion": 0.0,
    "rank": 40
+  },
+  {
+   "name": "England",
+   "group": "L",
+   "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/eng.png",
+   "rating": 1720,
+   "sources": {
+    "elo": 2020.0,
+    "kuleuven": 1886.0,
+    "silver": 2027.0
+   },
+   "proj_points": 7.0,
+   "win_group": 1.0,
+   "runner_up": 0.0,
+   "third": 0.0,
+   "fourth": 0.0,
+   "advance": 1.0,
+   "round_of_32": 1.0,
+   "round_of_16": 1.0,
+   "quarter_finals": 1.0,
+   "semi_finals": 1.0,
+   "final": 0.0,
+   "champion": 0.0,
+   "rank": 4
   },
   {
    "name": "Croatia",
@@ -4823,6 +4823,30 @@ window.WC_DATA = {
    "p_a": 0.3238,
    "p_draw": 0.2566,
    "p_b": 0.4197,
+   "played": true,
+   "score_a": 1,
+   "score_b": 2
+  },
+  {
+   "match_no": 104,
+   "date": "2026-07-19",
+   "venue": "East Rutherford",
+   "stage": "ko",
+   "group": "",
+   "round": "Final",
+   "team_a": {
+    "name": "Spain",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/esp.png"
+   },
+   "team_b": {
+    "name": "Argentina",
+    "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/arg.png"
+   },
+   "xg_a": 1.38,
+   "xg_b": 1.32,
+   "p_a": 0.3852,
+   "p_draw": 0.258,
+   "p_b": 0.3568,
    "played": false
   }
  ]
