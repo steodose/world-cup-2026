@@ -1,9 +1,9 @@
 {
  "meta": {
-  "generated": "2026-07-16 02:37 UTC",
+  "generated": "2026-07-20 01:32 UTC",
   "n_sims": 50000,
   "locked_group_matches": 72,
-  "locked_ko_matches": 30,
+  "locked_ko_matches": 31,
   "sources": [
    "elo",
    "kuleuven",
@@ -742,7 +742,7 @@
      "quarter_finals": 1.0,
      "semi_finals": 1.0,
      "final": 1.0,
-     "champion": 0.52032,
+     "champion": 1.0,
      "rank": 1
     },
     {
@@ -944,7 +944,7 @@
      "quarter_finals": 1.0,
      "semi_finals": 1.0,
      "final": 1.0,
-     "champion": 0.47968,
+     "champion": 0.0,
      "rank": 2
     },
     {
@@ -1246,32 +1246,8 @@
    "quarter_finals": 1.0,
    "semi_finals": 1.0,
    "final": 1.0,
-   "champion": 0.52032,
+   "champion": 1.0,
    "rank": 1
-  },
-  {
-   "name": "Argentina",
-   "group": "J",
-   "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/arg.png",
-   "rating": 1793,
-   "sources": {
-    "elo": 2113.0,
-    "kuleuven": 1965.0,
-    "silver": 2065.0
-   },
-   "proj_points": 9.0,
-   "win_group": 1.0,
-   "runner_up": 0.0,
-   "third": 0.0,
-   "fourth": 0.0,
-   "advance": 1.0,
-   "round_of_32": 1.0,
-   "round_of_16": 1.0,
-   "quarter_finals": 1.0,
-   "semi_finals": 1.0,
-   "final": 1.0,
-   "champion": 0.47968,
-   "rank": 2
   },
   {
    "name": "Mexico",
@@ -2112,6 +2088,30 @@
    "final": 0.0,
    "champion": 0.0,
    "rank": 37
+  },
+  {
+   "name": "Argentina",
+   "group": "J",
+   "logo": "https://a.espncdn.com/combiner/i?img=/i/teamlogos/countries/500/arg.png",
+   "rating": 1793,
+   "sources": {
+    "elo": 2113.0,
+    "kuleuven": 1965.0,
+    "silver": 2065.0
+   },
+   "proj_points": 9.0,
+   "win_group": 1.0,
+   "runner_up": 0.0,
+   "third": 0.0,
+   "fourth": 0.0,
+   "advance": 1.0,
+   "round_of_32": 1.0,
+   "round_of_16": 1.0,
+   "quarter_finals": 1.0,
+   "semi_finals": 1.0,
+   "final": 1.0,
+   "champion": 0.0,
+   "rank": 2
   },
   {
    "name": "Austria",
@@ -4847,7 +4847,9 @@
    "p_a": 0.3852,
    "p_draw": 0.258,
    "p_b": 0.3568,
-   "played": false
+   "played": true,
+   "score_a": 1,
+   "score_b": 0
   }
  ]
 }
